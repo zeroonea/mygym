@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
+import '../data/media_helpers.dart';
 import '../models/exercise.dart';
 import '../state/gym_provider.dart';
 import '../widgets/common.dart';
+import '../widgets/exercise_demo.dart';
 import 'exercises_screen.dart';
 
 /// Full-screen picker returning the ids of the exercises the user selected.
@@ -76,11 +78,15 @@ class _ExercisePickerScreenState extends State<ExercisePickerScreen> {
                           itemBuilder: (context, i) {
                             final e = exercises[i];
                             final checked = _selected.contains(e.id);
+                            final media = mediaFor(e.name);
                             return Card(
                               margin: const EdgeInsets.only(bottom: 8),
                               child: CheckboxListTile(
                                 value: checked,
-                                secondary: MuscleAvatar(group: e.group),
+                                secondary:
+                                    media != null && media.frames.isNotEmpty
+                                        ? ExerciseThumb(frame: media.frames.first)
+                                        : MuscleAvatar(group: e.group),
                                 title: Text(e.name,
                                     style: const TextStyle(
                                         fontWeight: FontWeight.w600)),

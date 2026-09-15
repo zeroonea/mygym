@@ -36,6 +36,9 @@ You can also trigger a build manually from the **Actions** tab â†’ *Build APK* â
 - Flutter (Material 3), `provider` for state
 - `sqflite` for local persistence
 - `fl_chart` for progress graphs
+- Animated exercise demos, muscle data and instructions from the public-domain
+  [free-exercise-db](https://github.com/yuhonas/free-exercise-db); the muscle
+  body-map is drawn in-app with a `CustomPainter`
 
 ## Developing locally
 

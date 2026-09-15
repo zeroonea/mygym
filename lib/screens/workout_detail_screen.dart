@@ -1,12 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
+import '../data/media_helpers.dart';
 import '../models/aggregates.dart';
 import '../models/exercise_set.dart';
 import '../state/gym_provider.dart';
 import '../utils/format.dart';
 import '../widgets/common.dart';
+import '../widgets/exercise_demo.dart';
 import '../widgets/set_editor.dart';
+import 'exercise_detail_screen.dart';
 import 'exercise_picker_screen.dart';
 
 class WorkoutDetailScreen extends StatefulWidget {
@@ -296,6 +299,12 @@ class _WorkoutDetailScreenState extends State<WorkoutDetailScreen> {
             onEditSet: _editSet,
             onDeleteSet: _deleteSet,
             onRemove: () => _removeExercise(group.workoutExercise.id!),
+            onOpen: () => Navigator.of(context).push(
+              MaterialPageRoute(
+                builder: (_) =>
+                    ExerciseDetailScreen(exercise: group.exercise),
+              ),
+            ),
           ),
           const SizedBox(height: 8),
           OutlinedButton.icon(
@@ -316,6 +325,7 @@ class _ExerciseCard extends StatelessWidget {
     required this.onEditSet,
     required this.onDeleteSet,
     required this.onRemove,
+    required this.onOpen,
   });
 
   final SetGroup group;
@@ -323,6 +333,15 @@ class _ExerciseCard extends StatelessWidget {
   final void Function(ExerciseSet set) onEditSet;
   final void Function(int id) onDeleteSet;
   final VoidCallback onRemove;
+  final VoidCallback onOpen;
+
+  Widget _leadingVisual() {
+    final media = mediaFor(group.exercise.name);
+    if (media != null && media.frames.isNotEmpty) {
+      return ExerciseThumb(frame: media.frames.first, size: 38);
+    }
+    return MuscleAvatar(group: group.exercise.group, size: 38);
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -336,19 +355,37 @@ class _ExerciseCard extends StatelessWidget {
           children: [
             Row(
               children: [
-                MuscleAvatar(group: group.exercise.group, size: 38),
-                const SizedBox(width: 12),
                 Expanded(
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(group.exercise.name,
-                          style: const TextStyle(
-                              fontWeight: FontWeight.w700, fontSize: 16)),
-                      Text(group.exercise.group.label,
-                          style: theme.textTheme.bodySmall?.copyWith(
-                              color: theme.colorScheme.onSurfaceVariant)),
-                    ],
+                  child: InkWell(
+                    onTap: onOpen,
+                    borderRadius: BorderRadius.circular(12),
+                    child: Padding(
+                      padding: const EdgeInsets.symmetric(vertical: 4),
+                      child: Row(
+                        children: [
+                          _leadingVisual(),
+                          const SizedBox(width: 12),
+                          Expanded(
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text(group.exercise.name,
+                                    style: const TextStyle(
+                                        fontWeight: FontWeight.w700,
+                                        fontSize: 16)),
+                                Text(group.exercise.group.label,
+                                    style: theme.textTheme.bodySmall?.copyWith(
+                                        color: theme
+                                            .colorScheme.onSurfaceVariant)),
+                              ],
+                            ),
+                          ),
+                          Icon(Icons.info_outline,
+                              size: 18,
+                              color: theme.colorScheme.onSurfaceVariant),
+                        ],
+                      ),
+                    ),
                   ),
                 ),
                 IconButton(

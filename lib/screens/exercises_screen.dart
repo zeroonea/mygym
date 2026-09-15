@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
+import '../data/media_helpers.dart';
 import '../models/exercise.dart';
 import '../models/muscle_group.dart';
 import '../state/gym_provider.dart';
 import '../widgets/common.dart';
+import '../widgets/exercise_demo.dart';
+import 'exercise_detail_screen.dart';
 
 class ExercisesScreen extends StatefulWidget {
   const ExercisesScreen({super.key});
@@ -96,26 +99,31 @@ class _ExercisesScreenState extends State<ExercisesScreen> {
                           itemCount: exercises.length,
                           itemBuilder: (context, i) {
                             final e = exercises[i];
+                            final media = mediaFor(e.name);
                             return Card(
                               margin: const EdgeInsets.only(bottom: 8),
                               child: ListTile(
-                                leading: MuscleAvatar(group: e.group),
+                                leading:
+                                    media != null && media.frames.isNotEmpty
+                                        ? ExerciseThumb(frame: media.frames.first)
+                                        : MuscleAvatar(group: e.group),
                                 title: Text(e.name,
                                     style: const TextStyle(
                                         fontWeight: FontWeight.w600)),
                                 subtitle: Text(e.group.label),
                                 trailing: e.isCustom
                                     ? IconButton(
-                                        icon:
-                                            const Icon(Icons.more_vert),
+                                        icon: const Icon(Icons.more_vert),
                                         onPressed: () =>
                                             _showExerciseMenu(context, e),
                                       )
-                                    : null,
-                                onTap: e.isCustom
-                                    ? () => showExerciseEditor(context,
-                                        existing: e)
-                                    : null,
+                                    : const Icon(Icons.chevron_right),
+                                onTap: () => Navigator.of(context).push(
+                                  MaterialPageRoute(
+                                    builder: (_) =>
+                                        ExerciseDetailScreen(exercise: e),
+                                  ),
+                                ),
                               ),
                             );
                           },
