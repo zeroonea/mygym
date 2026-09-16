@@ -29,11 +29,20 @@ android {
         versionName = flutter.versionName
     }
 
+    signingConfigs {
+        create("release") {
+            // Personal, committed signing key so every CI build shares the same
+            // signature and installs as an in-place update. Not for Play Store.
+            storeFile = file("mygym-release.jks")
+            storePassword = "mygymkey"
+            keyAlias = "mygym"
+            keyPassword = "mygymkey"
+        }
+    }
+
     buildTypes {
         release {
-            // TODO: Add your own signing config for the release build.
-            // Signing with the debug keys for now, so `flutter run --release` works.
-            signingConfig = signingConfigs.getByName("debug")
+            signingConfig = signingConfigs.getByName("release")
         }
     }
 }
