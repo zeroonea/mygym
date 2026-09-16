@@ -16,6 +16,25 @@ String formatVolume(double volume) => _volumeFormat.format(volume.round());
 String formatFullDate(DateTime date) =>
     DateFormat('EEEE, d MMM yyyy').format(date);
 
+/// Clock time, e.g. `10:32 am`.
+String formatClock(DateTime date) => DateFormat('h:mm a').format(date);
+
+/// A compact rest/elapsed label, e.g. `45s`, `2m 10s`, `1h 5m`.
+String formatDuration(Duration d) {
+  if (d.isNegative) return '0s';
+  final h = d.inHours;
+  final m = d.inMinutes.remainder(60);
+  final s = d.inSeconds.remainder(60);
+  if (h > 0) return '${h}h ${m}m';
+  if (m > 0) return s > 0 ? '${m}m ${s}s' : '${m}m';
+  return '${s}s';
+}
+
+/// Formats a measurement/number, dropping a trailing `.0` (e.g. `80`, `80.5`).
+String formatNumber(double value) => value == value.roundToDouble()
+    ? value.toStringAsFixed(0)
+    : value.toStringAsFixed(1);
+
 String formatShortDate(DateTime date) => DateFormat('d MMM yyyy').format(date);
 
 String formatDayMonth(DateTime date) => DateFormat('d MMM').format(date);

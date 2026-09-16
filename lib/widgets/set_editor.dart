@@ -3,19 +3,29 @@ import 'package:flutter/services.dart';
 
 import '../utils/format.dart';
 
-/// The outcome of the set editor: the entered weight/reps plus whether the
-/// user asked to immediately log another set.
-typedef SetEditorResult = ({double weight, int reps, bool again});
+/// The outcome of the set editor: the entered weight/reps, an optional
+/// bodyweight snapshot (for bodyweight exercises), plus whether the user asked
+/// to immediately log another set.
+typedef SetEditorResult = ({
+  double weight,
+  int reps,
+  double? bodyWeight,
+  bool again
+});
 
 /// Shows a fast set-entry sheet with +/- steppers and keyboard entry.
 ///
 /// [allowAddAnother] adds a "Save & next" action for rapid multi-set logging.
+/// For a bodyweight exercise, pass [isBodyweight] and the current [bodyWeight]
+/// so volume/1RM can count the lifter's bodyweight toward the load.
 Future<SetEditorResult?> showSetEditor(
   BuildContext context, {
   double? weight,
   int? reps,
   bool allowAddAnother = true,
   String? exerciseName,
+  bool isBodyweight = false,
+  double? bodyWeight,
 }) {
   return showModalBottomSheet<SetEditorResult>(
     context: context,
@@ -30,6 +40,8 @@ Future<SetEditorResult?> showSetEditor(
         initialReps: reps,
         allowAddAnother: allowAddAnother,
         exerciseName: exerciseName,
+        isBodyweight: isBodyweight,
+        bodyWeight: bodyWeight,
       ),
     ),
   );
@@ -41,19 +53,24 @@ class _SetEditor extends StatefulWidget {
     this.initialReps,
     required this.allowAddAnother,
     this.exerciseName,
+    this.isBodyweight = false,
+    this.bodyWeight,
   });
 
   final double? initialWeight;
   final int? initialReps;
   final bool allowAddAnother;
   final String? exerciseName;
+  final bool isBodyweight;
+  final double? bodyWeight;
 
   @override
   State<_SetEditor> createState() => _SetEditorState();
 }
 
 class _SetEditorState extends State<_SetEditor> {
-  late double _weight = widget.initialWeight ?? 20;
+  late double _weight =
+      widget.initialWeight ?? (widget.isBodyweight ? 0 : 20);
   late int _reps = widget.initialReps ?? 10;
   late final TextEditingController _weightController =
       TextEditingController(text: formatWeight(_weight));
@@ -84,7 +101,14 @@ class _SetEditorState extends State<_SetEditor> {
     final r = int.tryParse(_repsController.text.trim()) ?? _reps;
     if (r <= 0) return;
     Navigator.pop<SetEditorResult>(
-        context, (weight: w < 0 ? 0 : w, reps: r, again: again));
+      context,
+      (
+        weight: w < 0 ? 0 : w,
+        reps: r,
+        bodyWeight: widget.isBodyweight ? widget.bodyWeight : null,
+        again: again,
+      ),
+    );
   }
 
   @override
@@ -104,8 +128,12 @@ class _SetEditorState extends State<_SetEditor> {
             overflow: TextOverflow.ellipsis,
           ),
           const SizedBox(height: 20),
+          if (widget.isBodyweight) ...[
+            _BodyweightBanner(bodyWeight: widget.bodyWeight),
+            const SizedBox(height: 16),
+          ],
           _StepperField(
-            label: 'Weight',
+            label: widget.isBodyweight ? 'Added weight' : 'Weight',
             unit: 'kg',
             controller: _weightController,
             allowDecimal: true,
@@ -148,6 +176,43 @@ class _SetEditorState extends State<_SetEditor> {
                 ),
               ],
             ],
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class _BodyweightBanner extends StatelessWidget {
+  const _BodyweightBanner({this.bodyWeight});
+
+  final double? bodyWeight;
+
+  @override
+  Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+    final known = bodyWeight != null;
+    return Container(
+      padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 12),
+      decoration: BoxDecoration(
+        color: theme.colorScheme.secondaryContainer.withValues(alpha: 0.5),
+        borderRadius: BorderRadius.circular(14),
+      ),
+      child: Row(
+        children: [
+          Icon(Icons.accessibility_new,
+              size: 20, color: theme.colorScheme.onSecondaryContainer),
+          const SizedBox(width: 10),
+          Expanded(
+            child: Text(
+              known
+                  ? 'Bodyweight ${formatWeight(bodyWeight!)} kg counts toward '
+                      'volume. Add extra load below if any.'
+                  : 'Bodyweight exercise. Log your weight in the Body tab to '
+                      'count it toward volume.',
+              style: theme.textTheme.bodySmall
+                  ?.copyWith(color: theme.colorScheme.onSecondaryContainer),
+            ),
           ),
         ],
       ),

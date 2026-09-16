@@ -3,9 +3,11 @@ import 'dart:convert';
 import 'package:sqflite/sqflite.dart';
 
 import '../models/aggregates.dart';
+import '../models/body_entry.dart';
 import '../models/catalog_exercise.dart';
 import '../models/exercise_set.dart';
 import '../models/muscle_group.dart';
+import '../models/profile.dart';
 import '../models/workout.dart';
 import '../models/workout_exercise.dart';
 import 'database.dart';
@@ -141,7 +143,10 @@ class GymRepository {
   }
 
   Future<void> addSet(int workoutExerciseId,
-      {required double weight, required int reps}) async {
+      {required double weight,
+      required int reps,
+      double? bodyWeight,
+      DateTime? createdAt}) async {
     final db = await _db;
     final existing = await db.query('sets',
         where: 'workout_exercise_id = ?', whereArgs: [workoutExerciseId]);
@@ -151,6 +156,8 @@ class GymRepository {
       'weight': weight,
       'reps': reps,
       'done': 1,
+      'body_weight': bodyWeight,
+      'created_at': (createdAt ?? DateTime.now()).millisecondsSinceEpoch,
     });
   }
 
@@ -264,6 +271,53 @@ class GymRepository {
       ));
     }
     return points;
+  }
+
+  // --- Profile & body metrics ---------------------------------------------
+
+  Future<Profile> getProfile() async {
+    final db = await _db;
+    final rows = await db.query('profile', where: 'id = 1');
+    if (rows.isEmpty) return const Profile();
+    return Profile.fromMap(rows.first);
+  }
+
+  Future<void> saveProfile(Profile profile) async {
+    final db = await _db;
+    await db.insert('profile', profile.toMap(),
+        conflictAlgorithm: ConflictAlgorithm.replace);
+  }
+
+  Future<List<BodyEntry>> getBodyEntries() async {
+    final db = await _db;
+    final rows = await db.query('body_metrics', orderBy: 'date DESC, id DESC');
+    return rows.map(BodyEntry.fromMap).toList();
+  }
+
+  /// The most recent logged bodyweight, if any (used for bodyweight-exercise
+  /// volume snapshots).
+  Future<double?> latestBodyWeight() async {
+    final db = await _db;
+    final rows = await db.query('body_metrics',
+        columns: ['weight'], orderBy: 'date DESC, id DESC', limit: 1);
+    if (rows.isEmpty) return null;
+    return (rows.first['weight'] as num).toDouble();
+  }
+
+  Future<int> addBodyEntry(BodyEntry entry) async {
+    final db = await _db;
+    return db.insert('body_metrics', entry.toMap());
+  }
+
+  Future<void> updateBodyEntry(BodyEntry entry) async {
+    final db = await _db;
+    await db.update('body_metrics', entry.toMap(),
+        where: 'id = ?', whereArgs: [entry.id]);
+  }
+
+  Future<void> deleteBodyEntry(int id) async {
+    final db = await _db;
+    await db.delete('body_metrics', where: 'id = ?', whereArgs: [id]);
   }
 
   Future<List<CatalogExercise>> exercisesWithHistory() async {

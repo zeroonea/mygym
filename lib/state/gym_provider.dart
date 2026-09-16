@@ -3,7 +3,9 @@ import 'package:flutter/foundation.dart';
 import '../data/exercise_catalog.dart';
 import '../data/gym_repository.dart';
 import '../models/aggregates.dart';
+import '../models/body_entry.dart';
 import '../models/catalog_exercise.dart';
+import '../models/profile.dart';
 import '../models/workout.dart';
 
 /// App-wide state: the exercise catalog plus the user's workouts. Screens
@@ -27,10 +29,21 @@ class GymProvider extends ChangeNotifier {
       const WorkoutSummary(workoutCount: 0, totalVolume: 0, totalSets: 0);
   WorkoutSummary get weekSummary => _weekSummary;
 
+  Profile _profile = const Profile();
+  Profile get profile => _profile;
+
+  List<BodyEntry> _bodyEntries = [];
+  List<BodyEntry> get bodyEntries => List.unmodifiable(_bodyEntries);
+
+  /// Most recent logged bodyweight, used to snapshot bodyweight-exercise sets.
+  double? get currentBodyWeight =>
+      _bodyEntries.isNotEmpty ? _bodyEntries.first.weight : null;
+
   Future<void> init() async {
     _loading = true;
     notifyListeners();
     await _reloadCatalog();
+    await _reloadBody(notify: false);
     await _reloadWorkouts(notify: false);
     _loading = false;
     notifyListeners();
@@ -38,6 +51,7 @@ class GymProvider extends ChangeNotifier {
 
   Future<void> refresh() async {
     await _reloadCatalog();
+    await _reloadBody(notify: false);
     await _reloadWorkouts();
   }
 
@@ -50,6 +64,34 @@ class GymProvider extends ChangeNotifier {
     _workouts = await repository.getWorkouts();
     _weekSummary = await repository.summarySince(_startOfWeek());
     if (notify) notifyListeners();
+  }
+
+  Future<void> _reloadBody({bool notify = true}) async {
+    _profile = await repository.getProfile();
+    _bodyEntries = await repository.getBodyEntries();
+    if (notify) notifyListeners();
+  }
+
+  // --- Body & profile ------------------------------------------------------
+
+  Future<void> saveProfile(Profile profile) async {
+    await repository.saveProfile(profile);
+    await _reloadBody();
+  }
+
+  Future<void> addBodyEntry(BodyEntry entry) async {
+    await repository.addBodyEntry(entry);
+    await _reloadBody();
+  }
+
+  Future<void> updateBodyEntry(BodyEntry entry) async {
+    await repository.updateBodyEntry(entry);
+    await _reloadBody();
+  }
+
+  Future<void> deleteBodyEntry(int id) async {
+    await repository.deleteBodyEntry(id);
+    await _reloadBody();
   }
 
   // --- Custom exercises ----------------------------------------------------

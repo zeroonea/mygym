@@ -50,6 +50,13 @@ class CatalogExercise {
 
   bool get hasDemo => imageUrls.isNotEmpty;
 
+  /// Whether the exercise is primarily loaded by the lifter's own bodyweight
+  /// (push-up, pull-up, dip …). Volume then counts bodyweight toward the load.
+  bool get usesBodyweight {
+    final eq = (equipment ?? '').toLowerCase();
+    return eq == 'body only';
+  }
+
   static List<String> _strings(Object? v) =>
       (v as List?)?.map((e) => e.toString()).toList() ?? const [];
 

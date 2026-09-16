@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import 'screens/body_screen.dart';
 import 'screens/exercises_screen.dart';
 import 'screens/history_screen.dart';
 import 'screens/home_screen.dart';
@@ -38,6 +39,7 @@ class _HomeShellState extends State<HomeShell> {
     HistoryScreen(),
     ExercisesScreen(),
     ProgressScreen(),
+    BodyScreen(),
   ];
 
   @override
@@ -67,6 +69,11 @@ class _HomeShellState extends State<HomeShell> {
             icon: Icon(Icons.insights_outlined),
             selectedIcon: Icon(Icons.insights),
             label: 'Progress',
+          ),
+          NavigationDestination(
+            icon: Icon(Icons.monitor_weight_outlined),
+            selectedIcon: Icon(Icons.monitor_weight),
+            label: 'Body',
           ),
         ],
       ),

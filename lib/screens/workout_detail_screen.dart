@@ -8,6 +8,7 @@ import '../state/gym_provider.dart';
 import '../utils/format.dart';
 import '../widgets/common.dart';
 import '../widgets/exercise_demo.dart';
+import '../widgets/muscle_summary.dart';
 import '../widgets/set_editor.dart';
 import 'exercise_detail_screen.dart';
 import 'exercise_picker_screen.dart';
@@ -65,6 +66,8 @@ class _WorkoutDetailScreenState extends State<WorkoutDetailScreen> {
   }
 
   Future<void> _addSet(SetGroup group) async {
+    final isBodyweight = group.exercise.usesBodyweight;
+    final bodyWeight = _provider.currentBodyWeight;
     double? weight = group.sets.isNotEmpty ? group.sets.last.weight : null;
     int? reps = group.sets.isNotEmpty ? group.sets.last.reps : null;
     var again = true;
@@ -76,12 +79,15 @@ class _WorkoutDetailScreenState extends State<WorkoutDetailScreen> {
         reps: reps,
         allowAddAnother: true,
         exerciseName: group.exercise.name,
+        isBodyweight: isBodyweight,
+        bodyWeight: bodyWeight,
       );
       if (result == null) break;
       await _provider.repository.addSet(
         group.workoutExercise.id!,
         weight: result.weight,
         reps: result.reps,
+        bodyWeight: result.bodyWeight,
       );
       weight = result.weight;
       reps = result.reps;
@@ -96,10 +102,15 @@ class _WorkoutDetailScreenState extends State<WorkoutDetailScreen> {
       weight: set.weight,
       reps: set.reps,
       allowAddAnother: false,
+      isBodyweight: set.isBodyweight,
+      bodyWeight: set.bodyWeight ?? _provider.currentBodyWeight,
     );
     if (result == null) return;
-    await _provider.repository
-        .updateSet(set.copyWith(weight: result.weight, reps: result.reps));
+    await _provider.repository.updateSet(set.copyWith(
+      weight: result.weight,
+      reps: result.reps,
+      bodyWeight: result.bodyWeight,
+    ));
     await _reload();
   }
 
@@ -277,6 +288,12 @@ class _WorkoutDetailScreenState extends State<WorkoutDetailScreen> {
                     icon: Icons.monitor_weight_outlined)),
           ],
         ),
+        if (detail.groups.isNotEmpty) ...[
+          const SizedBox(height: 16),
+          MuscleSummaryCard(
+            exercises: [for (final g in detail.groups) g.exercise],
+          ),
+        ],
         const SizedBox(height: 16),
         if (detail.groups.isEmpty)
           Padding(
@@ -341,6 +358,15 @@ class _ExerciseCard extends StatelessWidget {
     return MuscleAvatar(group: e.group, size: 38);
   }
 
+  /// Rest between two consecutive sets, from their timestamps (null if unknown).
+  static Duration? _restBetween(ExerciseSet? previous, ExerciseSet current) {
+    final a = previous?.createdAt;
+    final b = current.createdAt;
+    if (a == null || b == null) return null;
+    final d = b.difference(a);
+    return d.isNegative ? null : d;
+  }
+
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
@@ -402,11 +428,14 @@ class _ExerciseCard extends StatelessWidget {
                         color: theme.colorScheme.onSurfaceVariant)),
               )
             else
-              ...group.sets.map((set) => _SetRow(
-                    set: set,
-                    onTap: () => onEditSet(set),
-                    onDelete: () => onDeleteSet(set.id!),
-                  )),
+              for (var i = 0; i < group.sets.length; i++)
+                _SetRow(
+                  set: group.sets[i],
+                  restSincePrevious: _restBetween(
+                      i > 0 ? group.sets[i - 1] : null, group.sets[i]),
+                  onTap: () => onEditSet(group.sets[i]),
+                  onDelete: () => onDeleteSet(group.sets[i].id!),
+                ),
             const SizedBox(height: 4),
             Padding(
               padding: const EdgeInsets.only(left: 4),
@@ -426,17 +455,47 @@ class _ExerciseCard extends StatelessWidget {
 class _SetRow extends StatelessWidget {
   const _SetRow({
     required this.set,
+    required this.restSincePrevious,
     required this.onTap,
     required this.onDelete,
   });
 
   final ExerciseSet set;
+  final Duration? restSincePrevious;
   final VoidCallback onTap;
   final VoidCallback onDelete;
 
   @override
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
+    final muted =
+        TextStyle(color: theme.colorScheme.onSurfaceVariant);
+
+    // Build the load label: bodyweight-aware ("BW", "BW + 10 kg") or a number.
+    final List<InlineSpan> load;
+    if (set.isBodyweight) {
+      load = [
+        const TextSpan(
+            text: 'BW', style: TextStyle(fontWeight: FontWeight.w700)),
+        if (set.weight > 0)
+          TextSpan(
+              text: ' + ${formatWeight(set.weight)} kg', style: muted),
+      ];
+    } else {
+      load = [
+        TextSpan(
+            text: formatWeight(set.weight),
+            style: const TextStyle(fontWeight: FontWeight.w700)),
+        TextSpan(text: ' kg', style: muted),
+      ];
+    }
+
+    final meta = <String>[
+      if (set.createdAt != null) formatClock(set.createdAt!),
+      if (restSincePrevious != null)
+        'rest ${formatDuration(restSincePrevious!)}',
+    ].join('  ·  ');
+
     return InkWell(
       onTap: onTap,
       borderRadius: BorderRadius.circular(10),
@@ -455,28 +514,30 @@ class _SetRow extends StatelessWidget {
             ),
             const SizedBox(width: 12),
             Expanded(
-              child: RichText(
-                text: TextSpan(
-                  style: theme.textTheme.bodyLarge,
-                  children: [
-                    TextSpan(
-                        text: formatWeight(set.weight),
-                        style:
-                            const TextStyle(fontWeight: FontWeight.w700)),
-                    TextSpan(
-                        text: ' kg  ×  ',
-                        style: TextStyle(
-                            color: theme.colorScheme.onSurfaceVariant)),
-                    TextSpan(
-                        text: '${set.reps}',
-                        style:
-                            const TextStyle(fontWeight: FontWeight.w700)),
-                    TextSpan(
-                        text: ' reps',
-                        style: TextStyle(
-                            color: theme.colorScheme.onSurfaceVariant)),
-                  ],
-                ),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  RichText(
+                    text: TextSpan(
+                      style: theme.textTheme.bodyLarge,
+                      children: [
+                        ...load,
+                        TextSpan(text: '  ×  ', style: muted),
+                        TextSpan(
+                            text: '${set.reps}',
+                            style:
+                                const TextStyle(fontWeight: FontWeight.w700)),
+                        TextSpan(text: ' reps', style: muted),
+                      ],
+                    ),
+                  ),
+                  if (meta.isNotEmpty)
+                    Padding(
+                      padding: const EdgeInsets.only(top: 2),
+                      child: Text(meta, style: theme.textTheme.bodySmall
+                          ?.copyWith(color: theme.colorScheme.onSurfaceVariant)),
+                    ),
+                ],
               ),
             ),
             Text('1RM ${formatWeight(set.estimatedOneRepMax)}',

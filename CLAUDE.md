@@ -5,9 +5,12 @@ Guidance for AI agents (and humans) working on this repo.
 ## What this is
 
 **MyGym** is a personal Android **gym-training tracker** built with **Flutter**
-(Material 3). It logs workouts with **weight × reps per set**, keeps history,
-shows per-exercise progress charts, and has an exercise library with animated
-demos and a muscle body-map.
+(Material 3). It logs workouts with **weight × reps per set** (with per-set
+timestamps + rest timers), keeps history, shows per-exercise progress charts,
+and has an exercise library with animated demos and a muscle body-map. It also
+tracks **body metrics** (weight/measurements → BMI, BMR, TDEE, body-fat %, lean
+mass, target weight + macro targets) and has a **food macro search** backed by
+Open Food Facts.
 
 - Package / applicationId: `com.zeroonea.mygym`
 - Development branch: `claude/gym-tracker-android-app-gc9ngm`
@@ -117,8 +120,19 @@ data/exercise_overrides.json          # THE enrichment file (see data/README.md)
 - `workout_exercises` stores `exercise_id` plus a **snapshot** of name +
   muscle_group so history survives catalog changes; if an id vanishes the repo
   builds a `CatalogExercise.placeholder`.
-- DB is **version 2**; `onUpgrade` drops & recreates (acceptable — early app,
-  local test data only). Bump the version and adjust if you change schema.
+- DB is **version 3**. `onUpgrade` from v1 still drops & recreates the training
+  tables (the model changed fundamentally in v2); from v2→v3 it is **additive
+  only** (`ALTER TABLE sets ADD COLUMN body_weight/created_at`, plus the new
+  `profile` and `body_metrics` tables) so existing workout data is preserved.
+  Prefer additive migrations going forward; bump the version if you change schema.
+- Sets carry `created_at` (for rest timers) and an optional `body_weight`
+  snapshot; for bodyweight exercises (`equipment == 'body only'`) volume/1RM use
+  `effectiveWeight = weight + bodyWeight`. Bodyweight comes from the latest
+  `body_metrics` entry (`GymProvider.currentBodyWeight`).
+- `profile` (single row id=1) holds sex/birth year/height/activity/goal/target;
+  health formulas live in `lib/utils/health.dart` (pure, unit-tested).
+- Food macro search (`lib/data/food_repository.dart`) hits Open Food Facts
+  (no API key) with a bundled `assets/data/foods_common.json` offline fallback.
 - Custom exercises live in the `custom_exercises` table and are merged into the
   catalog on load.
 

@@ -1,4 +1,9 @@
 /// One logged set: a weight lifted for a number of reps.
+///
+/// [weight] is the external load. For bodyweight exercises, [bodyWeight] holds
+/// the lifter's bodyweight snapshot at the time, so volume and 1RM reflect the
+/// full load moved (bodyweight + any added weight) and stay accurate as the
+/// user's bodyweight changes over time.
 class ExerciseSet {
   const ExerciseSet({
     this.id,
@@ -7,6 +12,8 @@ class ExerciseSet {
     required this.weight,
     required this.reps,
     this.done = true,
+    this.bodyWeight,
+    this.createdAt,
   });
 
   final int? id;
@@ -16,11 +23,23 @@ class ExerciseSet {
   final int reps;
   final bool done;
 
-  /// Estimated one-rep max using the Epley formula.
-  double get estimatedOneRepMax =>
-      reps <= 1 ? weight : weight * (1 + reps / 30.0);
+  /// Bodyweight snapshot (kg) for bodyweight exercises; null for weighted ones.
+  final double? bodyWeight;
 
-  double get volume => weight * reps;
+  /// When the set was logged (used to show rest between sets).
+  final DateTime? createdAt;
+
+  /// True when this set counts bodyweight toward the load.
+  bool get isBodyweight => bodyWeight != null;
+
+  /// The total load moved: external weight plus any bodyweight snapshot.
+  double get effectiveWeight => weight + (bodyWeight ?? 0);
+
+  /// Estimated one-rep max using the Epley formula, on the effective load.
+  double get estimatedOneRepMax =>
+      reps <= 1 ? effectiveWeight : effectiveWeight * (1 + reps / 30.0);
+
+  double get volume => effectiveWeight * reps;
 
   ExerciseSet copyWith({
     int? id,
@@ -29,6 +48,8 @@ class ExerciseSet {
     double? weight,
     int? reps,
     bool? done,
+    double? bodyWeight,
+    DateTime? createdAt,
   }) {
     return ExerciseSet(
       id: id ?? this.id,
@@ -37,6 +58,8 @@ class ExerciseSet {
       weight: weight ?? this.weight,
       reps: reps ?? this.reps,
       done: done ?? this.done,
+      bodyWeight: bodyWeight ?? this.bodyWeight,
+      createdAt: createdAt ?? this.createdAt,
     );
   }
 
@@ -47,6 +70,8 @@ class ExerciseSet {
         'weight': weight,
         'reps': reps,
         'done': done ? 1 : 0,
+        'body_weight': bodyWeight,
+        'created_at': createdAt?.millisecondsSinceEpoch,
       };
 
   factory ExerciseSet.fromMap(Map<String, Object?> map) => ExerciseSet(
@@ -56,5 +81,9 @@ class ExerciseSet {
         weight: (map['weight'] as num).toDouble(),
         reps: map['reps'] as int,
         done: (map['done'] as int? ?? 1) == 1,
+        bodyWeight: (map['body_weight'] as num?)?.toDouble(),
+        createdAt: map['created_at'] == null
+            ? null
+            : DateTime.fromMillisecondsSinceEpoch(map['created_at'] as int),
       );
 }
