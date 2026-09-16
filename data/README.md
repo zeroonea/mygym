@@ -1,14 +1,28 @@
 # MyGym exercise enrichment data
 
-`exercise_overrides.json` is loaded by the app at launch (over
-`raw.githubusercontent.com`) and merged on top of the bundled
+`exercise_overrides.json` is merged on top of the bundled
 [free-exercise-db](https://github.com/yuhonas/free-exercise-db) dataset. It lets
 you refine or add exercise detail **without rebuilding the APK** — edit this
-file, push, and the app picks it up on next launch (it also caches the last
-successful copy for offline use).
+file, push, and pull it onto the phone via **Settings → Sync now**.
 
-The app reads it from the ref set in `lib/data/remote_config.dart`
-(`RemoteConfig.dataRepoRef`). Point that at `main` once this branch is merged.
+> **Sync is manual.** The app fetches nothing at launch. Both this overrides
+> file and the full `assets/data/exercises.json` (with its `bodyweight` flags)
+> are pulled over `raw.githubusercontent.com` only when you tap **Sync now**,
+> then cached on the device (used offline until the next sync). The bundled
+> copies are the default until you sync.
+
+The app reads both from the ref set in `lib/data/remote_config.dart`
+(`RemoteConfig.dataRepoRef`, used by `overridesUrl` and `datasetUrl`). Point that
+at `main` once this branch is merged.
+
+## Bodyweight classification
+
+Each exercise in `assets/data/exercises.json` carries a curated
+`"bodyweight": true|false` flag (the raw `equipment` tag is unreliable — dips and
+muscle-ups are tagged `other`). When `true`, logged sets count the lifter's
+bodyweight toward volume/1RM (`effectiveWeight = added load + bodyweight`). You
+can also flip it per-exercise from this overrides file via the `bodyweight` key
+(see below); the flag wins over the `equipment` heuristic.
 
 ## Format
 
@@ -21,7 +35,7 @@ The app reads it from the ref set in `lib/data/remote_config.dart`
       "primaryMuscles":   ["lateral deltoid"],
       "secondaryMuscles": ["anterior deltoid", "upper trapezius"],
       // any of these may also be overridden:
-      "name": "...", "category": "...", "equipment": "...",
+      "name": "...", "category": "...", "equipment": "...", "bodyweight": true,
       "level": "...", "instructions": ["..."], "images": ["url-or-relative"]
     }
   },

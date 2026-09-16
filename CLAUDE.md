@@ -80,11 +80,20 @@ Exercises come from a **catalog**; only the user's own data is in SQLite.
   exercises: name, muscles, equipment, level, instructions, images). Public
   domain (Unlicense).
 - **Enrichment (remote, editable without rebuild):** `data/exercise_overrides.json`
-  in THIS repo, fetched at launch over `raw.githubusercontent.com` and merged
-  over the base (cached on device). Set the ref in
-  `lib/data/remote_config.dart` (`RemoteConfig.dataRepoRef`) — switch to `main`
-  after merging. **The repo must be public** for the phone to fetch it; if the
-  fetch fails the app degrades to base data.
+  plus the full `assets/data/exercises.json`, both pulled over
+  `raw.githubusercontent.com` and merged/replacing the bundled copies. Set the
+  ref in `lib/data/remote_config.dart` (`RemoteConfig.dataRepoRef` →
+  `overridesUrl`/`datasetUrl`) — switch to `main` after merging. **The repo must
+  be public** for the phone to fetch it.
+- **Sync is manual.** Nothing is fetched at launch — `ExerciseCatalog.load()`
+  reads bundled assets + on-device caches only. **Settings → Sync now**
+  (`GymProvider.syncRemoteData` → `ExerciseCatalog.syncRemote`) pulls fresh data
+  and caches it; the bundled copies are the offline default.
+- **Bodyweight flag:** each exercise in `assets/data/exercises.json` has a curated
+  `bodyweight: true|false` (the `equipment` tag is unreliable). `CatalogExercise`
+  reads it; `usesBodyweight` prefers the flag, falling back to
+  `equipment == 'body only'`. Regenerate/adjust classification in that file (or
+  patch per-exercise via the overrides `bodyweight` key).
 - **Demo images:** streamed from free-exercise-db raw URLs and cached
   (`cached_network_image`). Requires the `INTERNET` permission, which is in
   `android/app/src/main/AndroidManifest.xml` (Flutter omits it from release by

@@ -55,6 +55,24 @@ class GymProvider extends ChangeNotifier {
     await _reloadWorkouts();
   }
 
+  bool _syncing = false;
+  bool get syncing => _syncing;
+
+  /// Data source + timestamp for the exercise dataset (for the Settings UI).
+  DataSource get dataSource => catalog.dataSource;
+  DateTime? get lastSyncedAt => catalog.lastSyncedAt;
+
+  /// Pulls fresh exercise data from GitHub on demand and reloads the catalog.
+  Future<SyncResult> syncRemoteData() async {
+    _syncing = true;
+    notifyListeners();
+    final result = await catalog.syncRemote();
+    await _reloadCatalog();
+    _syncing = false;
+    notifyListeners();
+    return result;
+  }
+
   Future<void> _reloadCatalog() async {
     final custom = await repository.getCustomExercises();
     await catalog.load(custom: custom);

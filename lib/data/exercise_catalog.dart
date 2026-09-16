@@ -10,11 +10,23 @@ import '../models/catalog_exercise.dart';
 import '../models/muscle_group.dart';
 import 'remote_config.dart';
 
-/// Source used for the enrichment overrides on the last load.
-enum OverridesSource { remote, cache, none }
+/// Where the base dataset came from on the last load.
+enum DataSource { bundled, synced }
 
-/// The exercise library: the bundled dataset, enriched by the remote overrides
-/// file, plus the user's custom exercises.
+/// The result of a manual remote data [ExerciseCatalog.syncRemote].
+class SyncResult {
+  const SyncResult({required this.ok, required this.message});
+  final bool ok;
+  final String message;
+}
+
+/// The exercise library: the bundled dataset (optionally replaced by a copy
+/// synced from GitHub and any cached overrides), plus the user's custom
+/// exercises.
+///
+/// Nothing here touches the network at launch — [load] reads only bundled
+/// assets and on-device caches. Fresh data is pulled on demand via
+/// [syncRemote] (wired to the Sync button in Settings).
 class ExerciseCatalog {
   final Map<String, CatalogExercise> _byId = {};
   List<CatalogExercise> _all = [];
@@ -22,19 +34,23 @@ class ExerciseCatalog {
   List<CatalogExercise> get all => List.unmodifiable(_all);
   CatalogExercise? byId(String id) => _byId[id];
 
-  OverridesSource overridesSource = OverridesSource.none;
+  /// Whether the base dataset on the last [load] was the bundled asset or a
+  /// previously synced copy, and when that copy was written.
+  DataSource dataSource = DataSource.bundled;
+  DateTime? lastSyncedAt;
 
-  /// Loads the base dataset, merges remote/cached overrides and additions,
-  /// then layers the supplied custom exercises on top.
+  /// Loads the base dataset (synced copy if present, else the bundled asset),
+  /// merges any cached overrides/additions, then layers custom exercises on
+  /// top. Offline and network-free.
   Future<void> load({List<CatalogExercise> custom = const []}) async {
-    final raw = await rootBundle.loadString('assets/data/exercises.json');
+    final raw = await _readBaseJson();
     final baseList = (json.decode(raw) as List).cast<Map<String, dynamic>>();
     final merged = <String, CatalogExercise>{
       for (final j in baseList)
         j['id'].toString(): CatalogExercise.fromJson(j),
     };
 
-    final overrides = await _loadOverrides();
+    final overrides = await _readCachedOverrides();
     if (overrides != null) {
       final patches =
           (overrides['overrides'] as Map?)?.cast<String, dynamic>() ?? {};
@@ -64,44 +80,86 @@ class ExerciseCatalog {
       ..sort((a, b) => a.name.toLowerCase().compareTo(b.name.toLowerCase()));
   }
 
-  Future<Map<String, dynamic>?> _loadOverrides() async {
-    final cacheFile = await _cacheFile();
-    // Try the network first (short timeout), fall back to the on-device cache.
+  /// Reads the base dataset JSON: the synced copy if it exists, else the
+  /// bundled asset. Sets [dataSource]/[lastSyncedAt] as a side effect.
+  Future<String> _readBaseJson() async {
     try {
-      final client = HttpClient()
-        ..connectionTimeout = const Duration(seconds: 5);
-      final request =
-          await client.getUrl(Uri.parse(RemoteConfig.overridesUrl));
-      final response =
-          await request.close().timeout(const Duration(seconds: 6));
-      if (response.statusCode == 200) {
-        final body = await response.transform(utf8.decoder).join();
-        final data = json.decode(body) as Map<String, dynamic>;
-        client.close();
-        try {
-          await cacheFile.writeAsString(body);
-        } catch (_) {}
-        overridesSource = OverridesSource.remote;
-        return data;
+      final file = await _datasetCacheFile();
+      if (await file.exists()) {
+        dataSource = DataSource.synced;
+        lastSyncedAt = (await file.stat()).modified;
+        return await file.readAsString();
       }
-      client.close();
-    } catch (e) {
-      debugPrint('overrides fetch failed: $e');
-    }
+    } catch (_) {}
+    dataSource = DataSource.bundled;
+    return rootBundle.loadString('assets/data/exercises.json');
+  }
 
+  Future<Map<String, dynamic>?> _readCachedOverrides() async {
     try {
-      if (await cacheFile.exists()) {
-        overridesSource = OverridesSource.cache;
-        return json.decode(await cacheFile.readAsString())
+      final file = await _overridesCacheFile();
+      if (await file.exists()) {
+        return json.decode(await file.readAsString())
             as Map<String, dynamic>;
       }
     } catch (_) {}
-
-    overridesSource = OverridesSource.none;
     return null;
   }
 
-  Future<File> _cacheFile() async {
+  /// Pulls the latest dataset + overrides from GitHub and caches them on the
+  /// device. Called from the Sync button; the caller reloads the catalog after.
+  Future<SyncResult> syncRemote() async {
+    int? exerciseCount;
+    try {
+      final datasetBody = await _fetch(RemoteConfig.datasetUrl);
+      final list = json.decode(datasetBody);
+      if (list is! List || list.isEmpty) {
+        return const SyncResult(ok: false, message: 'Dataset response invalid.');
+      }
+      exerciseCount = list.length;
+      await (await _datasetCacheFile()).writeAsString(datasetBody);
+
+      // Overrides are optional — a failure here shouldn't fail the whole sync.
+      try {
+        final overridesBody = await _fetch(RemoteConfig.overridesUrl);
+        json.decode(overridesBody); // validate
+        await (await _overridesCacheFile()).writeAsString(overridesBody);
+      } catch (e) {
+        debugPrint('overrides sync skipped: $e');
+      }
+
+      return SyncResult(
+          ok: true, message: 'Synced $exerciseCount exercises.');
+    } catch (e) {
+      debugPrint('dataset sync failed: $e');
+      return const SyncResult(
+          ok: false,
+          message: 'Sync failed. Check your connection and try again.');
+    }
+  }
+
+  Future<String> _fetch(String url) async {
+    final client = HttpClient()
+      ..connectionTimeout = const Duration(seconds: 8);
+    try {
+      final request = await client.getUrl(Uri.parse(url));
+      final response =
+          await request.close().timeout(const Duration(seconds: 15));
+      if (response.statusCode != 200) {
+        throw HttpException('HTTP ${response.statusCode}', uri: Uri.parse(url));
+      }
+      return await response.transform(utf8.decoder).join();
+    } finally {
+      client.close();
+    }
+  }
+
+  Future<File> _datasetCacheFile() async {
+    final dir = await getApplicationSupportDirectory();
+    return File(p.join(dir.path, 'exercises_synced.json'));
+  }
+
+  Future<File> _overridesCacheFile() async {
     final dir = await getApplicationSupportDirectory();
     return File(p.join(dir.path, 'exercise_overrides.json'));
   }

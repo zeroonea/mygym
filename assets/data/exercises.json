@@ -5,6 +5,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "body only",
+    "bodyweight": true,
     "primaryMuscles": [
       "abdominals"
     ],
@@ -29,6 +30,7 @@
     "level": "beginner",
     "mechanic": null,
     "equipment": "body only",
+    "bodyweight": false,
     "primaryMuscles": [
       "hamstrings"
     ],
@@ -54,6 +56,7 @@
     "level": "intermediate",
     "mechanic": "isolation",
     "equipment": "machine",
+    "bodyweight": false,
     "primaryMuscles": [
       "abdominals"
     ],
@@ -77,6 +80,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "other",
+    "bodyweight": false,
     "primaryMuscles": [
       "abdominals"
     ],
@@ -102,6 +106,7 @@
     "level": "intermediate",
     "mechanic": "isolation",
     "equipment": "foam roll",
+    "bodyweight": false,
     "primaryMuscles": [
       "adductors"
     ],
@@ -124,6 +129,7 @@
     "level": "intermediate",
     "mechanic": null,
     "equipment": null,
+    "bodyweight": false,
     "primaryMuscles": [
       "adductors"
     ],
@@ -147,6 +153,7 @@
     "level": "intermediate",
     "mechanic": "isolation",
     "equipment": "kettlebells",
+    "bodyweight": false,
     "primaryMuscles": [
       "abdominals"
     ],
@@ -174,6 +181,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "body only",
+    "bodyweight": true,
     "primaryMuscles": [
       "abdominals"
     ],
@@ -199,6 +207,7 @@
     "level": "intermediate",
     "mechanic": null,
     "equipment": "body only",
+    "bodyweight": false,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -223,6 +232,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "dumbbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "biceps"
     ],
@@ -250,6 +260,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "body only",
+    "bodyweight": true,
     "primaryMuscles": [
       "abdominals"
     ],
@@ -274,6 +285,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "dumbbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "biceps"
     ],
@@ -300,6 +312,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": null,
+    "bodyweight": false,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -329,6 +342,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "cable",
+    "bodyweight": false,
     "primaryMuscles": [
       "shoulders"
     ],
@@ -354,6 +368,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "dumbbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "shoulders"
     ],
@@ -378,6 +393,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "kettlebells",
+    "bodyweight": false,
     "primaryMuscles": [
       "chest"
     ],
@@ -405,6 +421,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "kettlebells",
+    "bodyweight": false,
     "primaryMuscles": [
       "hamstrings"
     ],
@@ -434,6 +451,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "kettlebells",
+    "bodyweight": false,
     "primaryMuscles": [
       "shoulders"
     ],
@@ -458,6 +476,7 @@
     "level": "intermediate",
     "mechanic": "isolation",
     "equipment": "kettlebells",
+    "bodyweight": false,
     "primaryMuscles": [
       "middle back"
     ],
@@ -483,6 +502,7 @@
     "level": "expert",
     "mechanic": "compound",
     "equipment": "kettlebells",
+    "bodyweight": false,
     "primaryMuscles": [
       "middle back"
     ],
@@ -511,6 +531,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": null,
+    "bodyweight": false,
     "primaryMuscles": [
       "calves"
     ],
@@ -533,6 +554,7 @@
     "level": "beginner",
     "mechanic": null,
     "equipment": null,
+    "bodyweight": false,
     "primaryMuscles": [
       "glutes"
     ],
@@ -555,6 +577,7 @@
     "level": "intermediate",
     "mechanic": null,
     "equipment": "other",
+    "bodyweight": false,
     "primaryMuscles": [
       "calves"
     ],
@@ -576,6 +599,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "shoulders"
     ],
@@ -603,6 +627,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": null,
+    "bodyweight": false,
     "primaryMuscles": [
       "shoulders"
     ],
@@ -627,6 +652,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "dumbbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "shoulders"
     ],
@@ -653,6 +679,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "dumbbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "chest"
     ],
@@ -677,6 +704,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "other",
+    "bodyweight": false,
     "primaryMuscles": [
       "lower back"
     ],
@@ -706,6 +734,7 @@
     "level": "expert",
     "mechanic": "compound",
     "equipment": "other",
+    "bodyweight": false,
     "primaryMuscles": [
       "lower back"
     ],
@@ -740,6 +769,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "other",
+    "bodyweight": false,
     "primaryMuscles": [
       "lower back"
     ],
@@ -770,6 +800,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "bands",
+    "bodyweight": false,
     "primaryMuscles": [
       "shoulders"
     ],
@@ -798,6 +829,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "other",
+    "bodyweight": false,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -825,6 +857,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "medicine ball",
+    "bodyweight": false,
     "primaryMuscles": [
       "shoulders"
     ],
@@ -848,6 +881,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "other",
+    "bodyweight": false,
     "primaryMuscles": [
       "calves"
     ],
@@ -873,6 +907,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "exercise ball",
+    "bodyweight": false,
     "primaryMuscles": [
       "hamstrings"
     ],
@@ -900,6 +935,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "other",
+    "bodyweight": false,
     "primaryMuscles": [
       "lats"
     ],
@@ -927,6 +963,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "bands",
+    "bodyweight": false,
     "primaryMuscles": [
       "hamstrings"
     ],
@@ -952,6 +989,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "bands",
+    "bodyweight": false,
     "primaryMuscles": [
       "hamstrings"
     ],
@@ -977,6 +1015,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "bands",
+    "bodyweight": false,
     "primaryMuscles": [
       "adductors"
     ],
@@ -1002,6 +1041,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "bands",
+    "bodyweight": false,
     "primaryMuscles": [
       "shoulders"
     ],
@@ -1028,6 +1068,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "bands",
+    "bodyweight": false,
     "primaryMuscles": [
       "triceps"
     ],
@@ -1050,6 +1091,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "abdominals"
     ],
@@ -1076,6 +1118,7 @@
     "level": "expert",
     "mechanic": "compound",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "abdominals"
     ],
@@ -1102,6 +1145,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "chest"
     ],
@@ -1129,6 +1173,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "biceps"
     ],
@@ -1155,6 +1200,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "biceps"
     ],
@@ -1178,6 +1224,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "lower back"
     ],
@@ -1211,6 +1258,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -1241,6 +1289,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "glutes"
     ],
@@ -1266,6 +1315,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "chest"
     ],
@@ -1293,6 +1343,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -1320,6 +1371,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "glutes"
     ],
@@ -1345,6 +1397,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "chest"
     ],
@@ -1372,6 +1425,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "shoulders"
     ],
@@ -1397,6 +1451,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -1425,6 +1480,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "shoulders"
     ],
@@ -1453,6 +1509,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "abdominals"
     ],
@@ -1480,6 +1537,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "calves"
     ],
@@ -1505,6 +1563,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "shoulders"
     ],
@@ -1532,6 +1591,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "traps"
     ],
@@ -1555,6 +1615,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "traps"
     ],
@@ -1581,6 +1642,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "abdominals"
     ],
@@ -1606,6 +1668,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -1633,6 +1696,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -1663,6 +1727,7 @@
     "level": "expert",
     "mechanic": "compound",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -1695,6 +1760,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -1723,6 +1789,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -1750,6 +1817,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "other",
+    "bodyweight": false,
     "primaryMuscles": [
       "shoulders"
     ],
@@ -1776,6 +1844,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "other",
+    "bodyweight": false,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -1801,6 +1870,7 @@
     "level": "expert",
     "mechanic": "isolation",
     "equipment": "other",
+    "bodyweight": false,
     "primaryMuscles": [
       "chest"
     ],
@@ -1826,6 +1896,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "body only",
+    "bodyweight": true,
     "primaryMuscles": [
       "triceps"
     ],
@@ -1852,6 +1923,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "body only",
+    "bodyweight": true,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -1880,6 +1952,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "triceps"
     ],
@@ -1908,6 +1981,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "bands",
+    "bodyweight": false,
     "primaryMuscles": [
       "chest"
     ],
@@ -1937,6 +2011,7 @@
     "level": "expert",
     "mechanic": "compound",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "triceps"
     ],
@@ -1964,6 +2039,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "other",
+    "bodyweight": false,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -1991,6 +2067,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "lats"
     ],
@@ -2020,6 +2097,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "dumbbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "chest"
     ],
@@ -2049,6 +2127,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "body only",
+    "bodyweight": true,
     "primaryMuscles": [
       "abdominals"
     ],
@@ -2073,6 +2152,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "middle back"
     ],
@@ -2100,6 +2180,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "dumbbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "shoulders"
     ],
@@ -2124,6 +2205,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "cable",
+    "bodyweight": false,
     "primaryMuscles": [
       "shoulders"
     ],
@@ -2152,6 +2234,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "middle back"
     ],
@@ -2182,6 +2265,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "middle back"
     ],
@@ -2210,6 +2294,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "dumbbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "middle back"
     ],
@@ -2237,6 +2322,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "dumbbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "middle back"
     ],
@@ -2263,6 +2349,7 @@
     "level": "expert",
     "mechanic": "compound",
     "equipment": "kettlebells",
+    "bodyweight": false,
     "primaryMuscles": [
       "abdominals"
     ],
@@ -2292,6 +2379,7 @@
     "level": "beginner",
     "mechanic": null,
     "equipment": "other",
+    "bodyweight": false,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -2316,6 +2404,7 @@
     "level": "beginner",
     "mechanic": null,
     "equipment": "machine",
+    "bodyweight": false,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -2341,6 +2430,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "triceps"
     ],
@@ -2369,6 +2459,7 @@
     "level": "intermediate",
     "mechanic": "isolation",
     "equipment": "body only",
+    "bodyweight": true,
     "primaryMuscles": [
       "triceps"
     ],
@@ -2395,6 +2486,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "body only",
+    "bodyweight": true,
     "primaryMuscles": [
       "triceps"
     ],
@@ -2419,6 +2511,7 @@
     "level": "intermediate",
     "mechanic": "isolation",
     "equipment": "e-z curl bar",
+    "bodyweight": false,
     "primaryMuscles": [
       "chest"
     ],
@@ -2447,6 +2540,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "other",
+    "bodyweight": false,
     "primaryMuscles": [
       "middle back"
     ],
@@ -2472,6 +2566,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "body only",
+    "bodyweight": true,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -2497,6 +2592,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": null,
+    "bodyweight": false,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -2524,6 +2620,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "cable",
+    "bodyweight": false,
     "primaryMuscles": [
       "abdominals"
     ],
@@ -2553,6 +2650,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "kettlebells",
+    "bodyweight": false,
     "primaryMuscles": [
       "forearms"
     ],
@@ -2577,6 +2675,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "body only",
+    "bodyweight": true,
     "primaryMuscles": [
       "abdominals"
     ],
@@ -2599,6 +2698,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "other",
+    "bodyweight": true,
     "primaryMuscles": [
       "hamstrings"
     ],
@@ -2627,6 +2727,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "other",
+    "bodyweight": false,
     "primaryMuscles": [
       "hamstrings"
     ],
@@ -2657,6 +2758,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -2686,6 +2788,7 @@
     "level": "expert",
     "mechanic": "compound",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -2716,6 +2819,7 @@
     "level": "expert",
     "mechanic": "compound",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -2747,6 +2851,7 @@
     "level": "intermediate",
     "mechanic": null,
     "equipment": "foam roll",
+    "bodyweight": false,
     "primaryMuscles": [
       "biceps"
     ],
@@ -2768,6 +2873,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "shoulders"
     ],
@@ -2795,6 +2901,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "body only",
+    "bodyweight": true,
     "primaryMuscles": [
       "abdominals"
     ],
@@ -2819,6 +2926,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "body only",
+    "bodyweight": true,
     "primaryMuscles": [
       "glutes"
     ],
@@ -2843,6 +2951,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "machine",
+    "bodyweight": false,
     "primaryMuscles": [
       "chest"
     ],
@@ -2867,6 +2976,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "cable",
+    "bodyweight": false,
     "primaryMuscles": [
       "chest"
     ],
@@ -2893,6 +3003,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "cable",
+    "bodyweight": false,
     "primaryMuscles": [
       "chest"
     ],
@@ -2919,6 +3030,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "cable",
+    "bodyweight": false,
     "primaryMuscles": [
       "abdominals"
     ],
@@ -2944,6 +3056,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "cable",
+    "bodyweight": false,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -2972,6 +3085,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "cable",
+    "bodyweight": false,
     "primaryMuscles": [
       "biceps"
     ],
@@ -2997,6 +3111,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "cable",
+    "bodyweight": false,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -3023,6 +3138,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "cable",
+    "bodyweight": false,
     "primaryMuscles": [
       "lats"
     ],
@@ -3047,6 +3163,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "cable",
+    "bodyweight": false,
     "primaryMuscles": [
       "triceps"
     ],
@@ -3071,6 +3188,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "cable",
+    "bodyweight": false,
     "primaryMuscles": [
       "shoulders"
     ],
@@ -3095,6 +3213,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "cable",
+    "bodyweight": false,
     "primaryMuscles": [
       "chest"
     ],
@@ -3119,6 +3238,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "cable",
+    "bodyweight": false,
     "primaryMuscles": [
       "abdominals"
     ],
@@ -3143,6 +3263,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "cable",
+    "bodyweight": false,
     "primaryMuscles": [
       "triceps"
     ],
@@ -3167,6 +3288,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "cable",
+    "bodyweight": false,
     "primaryMuscles": [
       "triceps"
     ],
@@ -3192,6 +3314,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "cable",
+    "bodyweight": false,
     "primaryMuscles": [
       "biceps"
     ],
@@ -3220,6 +3343,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "cable",
+    "bodyweight": false,
     "primaryMuscles": [
       "shoulders"
     ],
@@ -3243,6 +3367,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "cable",
+    "bodyweight": false,
     "primaryMuscles": [
       "abdominals"
     ],
@@ -3268,6 +3393,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "cable",
+    "bodyweight": false,
     "primaryMuscles": [
       "triceps"
     ],
@@ -3292,6 +3418,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "cable",
+    "bodyweight": false,
     "primaryMuscles": [
       "shoulders"
     ],
@@ -3320,6 +3447,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "cable",
+    "bodyweight": false,
     "primaryMuscles": [
       "abdominals"
     ],
@@ -3346,6 +3474,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "cable",
+    "bodyweight": false,
     "primaryMuscles": [
       "abdominals"
     ],
@@ -3370,6 +3499,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "cable",
+    "bodyweight": false,
     "primaryMuscles": [
       "shoulders"
     ],
@@ -3399,6 +3529,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "cable",
+    "bodyweight": false,
     "primaryMuscles": [
       "shoulders"
     ],
@@ -3424,6 +3555,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "cable",
+    "bodyweight": false,
     "primaryMuscles": [
       "traps"
     ],
@@ -3448,6 +3580,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "cable",
+    "bodyweight": false,
     "primaryMuscles": [
       "forearms"
     ],
@@ -3473,6 +3606,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "machine",
+    "bodyweight": false,
     "primaryMuscles": [
       "traps"
     ],
@@ -3496,6 +3630,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "machine",
+    "bodyweight": false,
     "primaryMuscles": [
       "calves"
     ],
@@ -3519,6 +3654,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "machine",
+    "bodyweight": false,
     "primaryMuscles": [
       "calves"
     ],
@@ -3543,6 +3679,7 @@
     "level": "intermediate",
     "mechanic": "isolation",
     "equipment": "dumbbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "calves"
     ],
@@ -3567,6 +3704,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "bands",
+    "bodyweight": false,
     "primaryMuscles": [
       "calves"
     ],
@@ -3591,6 +3729,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": null,
+    "bodyweight": false,
     "primaryMuscles": [
       "calves"
     ],
@@ -3613,6 +3752,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": null,
+    "bodyweight": false,
     "primaryMuscles": [
       "calves"
     ],
@@ -3635,6 +3775,7 @@
     "level": "intermediate",
     "mechanic": null,
     "equipment": "foam roll",
+    "bodyweight": false,
     "primaryMuscles": [
       "calves"
     ],
@@ -3656,6 +3797,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "other",
+    "bodyweight": false,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -3685,6 +3827,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "shoulders"
     ],
@@ -3710,6 +3853,7 @@
     "level": "beginner",
     "mechanic": null,
     "equipment": null,
+    "bodyweight": false,
     "primaryMuscles": [
       "adductors"
     ],
@@ -3739,6 +3883,7 @@
     "level": "beginner",
     "mechanic": null,
     "equipment": null,
+    "bodyweight": false,
     "primaryMuscles": [
       "lower back"
     ],
@@ -3764,6 +3909,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "medicine ball",
+    "bodyweight": false,
     "primaryMuscles": [
       "lats"
     ],
@@ -3790,6 +3936,7 @@
     "level": "intermediate",
     "mechanic": "isolation",
     "equipment": "other",
+    "bodyweight": false,
     "primaryMuscles": [
       "triceps"
     ],
@@ -3812,6 +3959,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "other",
+    "bodyweight": false,
     "primaryMuscles": [
       "chest"
     ],
@@ -3837,6 +3985,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "other",
+    "bodyweight": false,
     "primaryMuscles": [
       "hamstrings"
     ],
@@ -3862,6 +4011,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": null,
+    "bodyweight": false,
     "primaryMuscles": [
       "lats"
     ],
@@ -3886,6 +4036,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "machine",
+    "bodyweight": true,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -3915,6 +4066,7 @@
     "level": "beginner",
     "mechanic": null,
     "equipment": "other",
+    "bodyweight": false,
     "primaryMuscles": [
       "shoulders"
     ],
@@ -3939,6 +4091,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "other",
+    "bodyweight": false,
     "primaryMuscles": [
       "chest"
     ],
@@ -3963,6 +4116,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "medicine ball",
+    "bodyweight": false,
     "primaryMuscles": [
       "chest"
     ],
@@ -3989,6 +4143,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "medicine ball",
+    "bodyweight": false,
     "primaryMuscles": [
       "chest"
     ],
@@ -4016,6 +4171,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "medicine ball",
+    "bodyweight": false,
     "primaryMuscles": [
       "chest"
     ],
@@ -4042,6 +4198,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "medicine ball",
+    "bodyweight": false,
     "primaryMuscles": [
       "chest"
     ],
@@ -4068,6 +4225,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "exercise ball",
+    "bodyweight": false,
     "primaryMuscles": [
       "chest"
     ],
@@ -4090,6 +4248,7 @@
     "level": "beginner",
     "mechanic": null,
     "equipment": null,
+    "bodyweight": false,
     "primaryMuscles": [
       "lower back"
     ],
@@ -4115,6 +4274,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "body only",
+    "bodyweight": true,
     "primaryMuscles": [
       "lats"
     ],
@@ -4143,6 +4303,7 @@
     "level": "beginner",
     "mechanic": null,
     "equipment": null,
+    "bodyweight": false,
     "primaryMuscles": [
       "neck"
     ],
@@ -4166,6 +4327,7 @@
     "level": "expert",
     "mechanic": "compound",
     "equipment": "other",
+    "bodyweight": false,
     "primaryMuscles": [
       "shoulders"
     ],
@@ -4196,6 +4358,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "hamstrings"
     ],
@@ -4229,6 +4392,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "hamstrings"
     ],
@@ -4258,6 +4422,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -4286,6 +4451,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "traps"
     ],
@@ -4310,6 +4476,7 @@
     "level": "expert",
     "mechanic": "compound",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "shoulders"
     ],
@@ -4345,6 +4512,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "shoulders"
     ],
@@ -4382,6 +4550,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -4411,6 +4580,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "body only",
+    "bodyweight": true,
     "primaryMuscles": [
       "chest"
     ],
@@ -4439,6 +4609,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "triceps"
     ],
@@ -4466,6 +4637,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "dumbbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "triceps"
     ],
@@ -4493,6 +4665,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "e-z curl bar",
+    "bodyweight": false,
     "primaryMuscles": [
       "biceps"
     ],
@@ -4519,6 +4692,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "e-z curl bar",
+    "bodyweight": false,
     "primaryMuscles": [
       "triceps"
     ],
@@ -4546,6 +4720,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "biceps"
     ],
@@ -4572,6 +4747,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "cable",
+    "bodyweight": false,
     "primaryMuscles": [
       "lats"
     ],
@@ -4601,6 +4777,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "body only",
+    "bodyweight": true,
     "primaryMuscles": [
       "triceps"
     ],
@@ -4628,6 +4805,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "biceps"
     ],
@@ -4654,6 +4832,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "body only",
+    "bodyweight": true,
     "primaryMuscles": [
       "abdominals"
     ],
@@ -4676,6 +4855,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "other",
+    "bodyweight": false,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -4705,6 +4885,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "dumbbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "biceps"
     ],
@@ -4731,6 +4912,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "body only",
+    "bodyweight": true,
     "primaryMuscles": [
       "abdominals"
     ],
@@ -4755,6 +4937,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "dumbbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "biceps"
     ],
@@ -4780,6 +4963,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "bands",
+    "bodyweight": false,
     "primaryMuscles": [
       "chest"
     ],
@@ -4808,6 +4992,7 @@
     "level": "intermediate",
     "mechanic": null,
     "equipment": null,
+    "bodyweight": false,
     "primaryMuscles": [
       "lower back"
     ],
@@ -4836,6 +5021,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "other",
+    "bodyweight": false,
     "primaryMuscles": [
       "shoulders"
     ],
@@ -4859,6 +5045,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "body only",
+    "bodyweight": true,
     "primaryMuscles": [
       "abdominals"
     ],
@@ -4883,6 +5070,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "body only",
+    "bodyweight": true,
     "primaryMuscles": [
       "abdominals"
     ],
@@ -4909,6 +5097,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "body only",
+    "bodyweight": true,
     "primaryMuscles": [
       "abdominals"
     ],
@@ -4934,6 +5123,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "dumbbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "shoulders"
     ],
@@ -4960,6 +5150,7 @@
     "level": "beginner",
     "mechanic": null,
     "equipment": null,
+    "bodyweight": false,
     "primaryMuscles": [
       "lower back"
     ],
@@ -4986,6 +5177,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "body only",
+    "bodyweight": true,
     "primaryMuscles": [
       "abdominals"
     ],
@@ -5012,6 +5204,7 @@
     "level": "expert",
     "mechanic": "compound",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "lower back"
     ],
@@ -5041,6 +5234,7 @@
     "level": "expert",
     "mechanic": "compound",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "lower back"
     ],
@@ -5071,6 +5265,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "chest"
     ],
@@ -5099,6 +5294,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "triceps"
     ],
@@ -5128,6 +5324,7 @@
     "level": "intermediate",
     "mechanic": "isolation",
     "equipment": "body only",
+    "bodyweight": true,
     "primaryMuscles": [
       "abdominals"
     ],
@@ -5153,6 +5350,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "dumbbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "chest"
     ],
@@ -5181,6 +5379,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "dumbbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "chest"
     ],
@@ -5205,6 +5404,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "dumbbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "triceps"
     ],
@@ -5229,6 +5429,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "triceps"
     ],
@@ -5253,6 +5454,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "body only",
+    "bodyweight": true,
     "primaryMuscles": [
       "abdominals"
     ],
@@ -5278,6 +5480,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": null,
+    "bodyweight": true,
     "primaryMuscles": [
       "chest"
     ],
@@ -5304,6 +5507,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "body only",
+    "bodyweight": true,
     "primaryMuscles": [
       "abdominals"
     ],
@@ -5328,6 +5532,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "machine",
+    "bodyweight": false,
     "primaryMuscles": [
       "chest"
     ],
@@ -5355,6 +5560,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "lower back"
     ],
@@ -5384,6 +5590,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "other",
+    "bodyweight": false,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -5413,6 +5620,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "machine",
+    "bodyweight": false,
     "primaryMuscles": [
       "triceps"
     ],
@@ -5440,6 +5648,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "other",
+    "bodyweight": true,
     "primaryMuscles": [
       "chest"
     ],
@@ -5466,6 +5675,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "body only",
+    "bodyweight": true,
     "primaryMuscles": [
       "triceps"
     ],
@@ -5492,6 +5702,7 @@
     "level": "intermediate",
     "mechanic": "isolation",
     "equipment": "other",
+    "bodyweight": false,
     "primaryMuscles": [
       "calves"
     ],
@@ -5516,6 +5727,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "kettlebells",
+    "bodyweight": false,
     "primaryMuscles": [
       "hamstrings"
     ],
@@ -5546,6 +5758,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "kettlebells",
+    "bodyweight": false,
     "primaryMuscles": [
       "shoulders"
     ],
@@ -5576,6 +5789,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "kettlebells",
+    "bodyweight": false,
     "primaryMuscles": [
       "shoulders"
     ],
@@ -5602,6 +5816,7 @@
     "level": "expert",
     "mechanic": "compound",
     "equipment": "kettlebells",
+    "bodyweight": false,
     "primaryMuscles": [
       "shoulders"
     ],
@@ -5628,6 +5843,7 @@
     "level": "intermediate",
     "mechanic": null,
     "equipment": "kettlebells",
+    "bodyweight": false,
     "primaryMuscles": [
       "abdominals"
     ],
@@ -5656,6 +5872,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "body only",
+    "bodyweight": true,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -5685,6 +5902,7 @@
     "level": "intermediate",
     "mechanic": "isolation",
     "equipment": "exercise ball",
+    "bodyweight": false,
     "primaryMuscles": [
       "glutes"
     ],
@@ -5709,6 +5927,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "biceps"
     ],
@@ -5734,6 +5953,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "other",
+    "bodyweight": false,
     "primaryMuscles": [
       "chest"
     ],
@@ -5759,6 +5979,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "dumbbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "biceps"
     ],
@@ -5785,6 +6006,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "dumbbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "chest"
     ],
@@ -5812,6 +6034,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "dumbbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "chest"
     ],
@@ -5838,6 +6061,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "dumbbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "biceps"
     ],
@@ -5863,6 +6087,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "dumbbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "hamstrings"
     ],
@@ -5895,6 +6120,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "dumbbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "triceps"
     ],
@@ -5920,6 +6146,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "dumbbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "chest"
     ],
@@ -5944,6 +6171,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "dumbbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "middle back"
     ],
@@ -5972,6 +6200,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "dumbbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "shoulders"
     ],
@@ -5998,6 +6227,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "dumbbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -6025,6 +6255,7 @@
     "level": "intermediate",
     "mechanic": "isolation",
     "equipment": "dumbbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "shoulders"
     ],
@@ -6051,6 +6282,7 @@
     "level": "intermediate",
     "mechanic": "isolation",
     "equipment": "dumbbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "forearms"
     ],
@@ -6076,6 +6308,7 @@
     "level": "intermediate",
     "mechanic": "isolation",
     "equipment": "dumbbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "shoulders"
     ],
@@ -6100,6 +6333,7 @@
     "level": "intermediate",
     "mechanic": "isolation",
     "equipment": "dumbbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "forearms"
     ],
@@ -6125,6 +6359,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "dumbbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "shoulders"
     ],
@@ -6152,6 +6387,7 @@
     "level": "intermediate",
     "mechanic": "isolation",
     "equipment": "dumbbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "triceps"
     ],
@@ -6177,6 +6413,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "dumbbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "shoulders"
     ],
@@ -6204,6 +6441,7 @@
     "level": "intermediate",
     "mechanic": "isolation",
     "equipment": "dumbbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "biceps"
     ],
@@ -6229,6 +6467,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "dumbbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "shoulders"
     ],
@@ -6254,6 +6493,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "dumbbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -6281,6 +6521,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "dumbbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "shoulders"
     ],
@@ -6305,6 +6546,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "dumbbell",
+    "bodyweight": true,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -6332,6 +6574,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "dumbbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "calves"
     ],
@@ -6357,6 +6600,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "dumbbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "shoulders"
     ],
@@ -6384,6 +6628,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "dumbbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "traps"
     ],
@@ -6407,6 +6652,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "dumbbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "abdominals"
     ],
@@ -6430,6 +6676,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "dumbbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -6459,6 +6706,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "dumbbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -6488,6 +6736,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "dumbbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -6515,6 +6764,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "dumbbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "triceps"
     ],
@@ -6538,6 +6788,7 @@
     "level": "beginner",
     "mechanic": null,
     "equipment": null,
+    "bodyweight": false,
     "primaryMuscles": [
       "lats"
     ],
@@ -6559,6 +6810,7 @@
     "level": "beginner",
     "mechanic": null,
     "equipment": null,
+    "bodyweight": false,
     "primaryMuscles": [
       "chest"
     ],
@@ -6582,6 +6834,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "e-z curl bar",
+    "bodyweight": false,
     "primaryMuscles": [
       "biceps"
     ],
@@ -6606,6 +6859,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "e-z curl bar",
+    "bodyweight": false,
     "primaryMuscles": [
       "triceps"
     ],
@@ -6631,6 +6885,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": null,
+    "bodyweight": false,
     "primaryMuscles": [
       "shoulders"
     ],
@@ -6655,6 +6910,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "body only",
+    "bodyweight": true,
     "primaryMuscles": [
       "abdominals"
     ],
@@ -6677,6 +6933,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": null,
+    "bodyweight": false,
     "primaryMuscles": [
       "chest"
     ],
@@ -6701,6 +6958,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -6727,6 +6985,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "cable",
+    "bodyweight": false,
     "primaryMuscles": [
       "lats"
     ],
@@ -6756,6 +7015,7 @@
     "level": "intermediate",
     "mechanic": null,
     "equipment": "machine",
+    "bodyweight": false,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -6781,6 +7041,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "exercise ball",
+    "bodyweight": true,
     "primaryMuscles": [
       "abdominals"
     ],
@@ -6805,6 +7066,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "exercise ball",
+    "bodyweight": false,
     "primaryMuscles": [
       "abdominals"
     ],
@@ -6829,6 +7091,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "kettlebells",
+    "bodyweight": false,
     "primaryMuscles": [
       "chest"
     ],
@@ -6853,6 +7116,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "dumbbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "shoulders"
     ],
@@ -6878,6 +7142,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "bands",
+    "bodyweight": false,
     "primaryMuscles": [
       "shoulders"
     ],
@@ -6902,6 +7167,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "cable",
+    "bodyweight": false,
     "primaryMuscles": [
       "shoulders"
     ],
@@ -6925,6 +7191,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "cable",
+    "bodyweight": false,
     "primaryMuscles": [
       "shoulders"
     ],
@@ -6947,6 +7214,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "other",
+    "bodyweight": false,
     "primaryMuscles": [
       "forearms"
     ],
@@ -6976,6 +7244,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "body only",
+    "bodyweight": true,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -7004,6 +7273,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "forearms"
     ],
@@ -7027,6 +7297,7 @@
     "level": "intermediate",
     "mechanic": "isolation",
     "equipment": "cable",
+    "bodyweight": false,
     "primaryMuscles": [
       "chest"
     ],
@@ -7053,6 +7324,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "body only",
+    "bodyweight": true,
     "primaryMuscles": [
       "abdominals"
     ],
@@ -7077,6 +7349,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "body only",
+    "bodyweight": true,
     "primaryMuscles": [
       "abdominals"
     ],
@@ -7100,6 +7373,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "dumbbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "biceps"
     ],
@@ -7125,6 +7399,7 @@
     "level": "intermediate",
     "mechanic": "isolation",
     "equipment": null,
+    "bodyweight": false,
     "primaryMuscles": [
       "hamstrings"
     ],
@@ -7151,6 +7426,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "triceps"
     ],
@@ -7176,6 +7452,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "triceps"
     ],
@@ -7202,6 +7479,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "body only",
+    "bodyweight": true,
     "primaryMuscles": [
       "glutes"
     ],
@@ -7228,6 +7506,7 @@
     "level": "intermediate",
     "mechanic": null,
     "equipment": "other",
+    "bodyweight": false,
     "primaryMuscles": [
       "calves"
     ],
@@ -7249,6 +7528,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "other",
+    "bodyweight": false,
     "primaryMuscles": [
       "chest"
     ],
@@ -7277,6 +7557,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -7305,6 +7586,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "body only",
+    "bodyweight": true,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -7334,6 +7616,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": null,
+    "bodyweight": false,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -7359,6 +7642,7 @@
     "level": "intermediate",
     "mechanic": "isolation",
     "equipment": "body only",
+    "bodyweight": true,
     "primaryMuscles": [
       "abdominals"
     ],
@@ -7385,6 +7669,7 @@
     "level": "expert",
     "mechanic": "compound",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -7414,6 +7699,7 @@
     "level": "expert",
     "mechanic": "compound",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -7443,6 +7729,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "other",
+    "bodyweight": true,
     "primaryMuscles": [
       "hamstrings"
     ],
@@ -7472,6 +7759,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "cable",
+    "bodyweight": false,
     "primaryMuscles": [
       "shoulders"
     ],
@@ -7496,6 +7784,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "other",
+    "bodyweight": false,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -7526,6 +7815,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "dumbbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "shoulders"
     ],
@@ -7549,6 +7839,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "dumbbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "shoulders"
     ],
@@ -7573,6 +7864,7 @@
     "level": "beginner",
     "mechanic": null,
     "equipment": "body only",
+    "bodyweight": false,
     "primaryMuscles": [
       "hamstrings"
     ],
@@ -7594,6 +7886,7 @@
     "level": "intermediate",
     "mechanic": "isolation",
     "equipment": "other",
+    "bodyweight": false,
     "primaryMuscles": [
       "shoulders"
     ],
@@ -7617,6 +7910,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "chest"
     ],
@@ -7645,6 +7939,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -7672,6 +7967,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "kettlebells",
+    "bodyweight": false,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -7697,6 +7993,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "dumbbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "shoulders"
     ],
@@ -7720,6 +8017,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "cable",
+    "bodyweight": false,
     "primaryMuscles": [
       "lats"
     ],
@@ -7745,6 +8043,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "other",
+    "bodyweight": false,
     "primaryMuscles": [
       "lats"
     ],
@@ -7773,6 +8072,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "machine",
+    "bodyweight": false,
     "primaryMuscles": [
       "hamstrings"
     ],
@@ -7798,6 +8098,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "body only",
+    "bodyweight": true,
     "primaryMuscles": [
       "glutes"
     ],
@@ -7823,6 +8124,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "kettlebells",
+    "bodyweight": false,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -7850,6 +8152,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "hamstrings"
     ],
@@ -7876,6 +8179,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "hamstrings"
     ],
@@ -7901,6 +8205,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "body only",
+    "bodyweight": true,
     "primaryMuscles": [
       "abdominals"
     ],
@@ -7928,6 +8233,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": null,
+    "bodyweight": false,
     "primaryMuscles": [
       "adductors"
     ],
@@ -7950,6 +8256,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "body only",
+    "bodyweight": false,
     "primaryMuscles": [
       "adductors"
     ],
@@ -7972,6 +8279,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "machine",
+    "bodyweight": false,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -8002,6 +8310,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "dumbbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "biceps"
     ],
@@ -8026,6 +8335,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "dumbbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "chest"
     ],
@@ -8055,6 +8365,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "foam roll",
+    "bodyweight": false,
     "primaryMuscles": [
       "hamstrings"
     ],
@@ -8077,6 +8388,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": null,
+    "bodyweight": false,
     "primaryMuscles": [
       "hamstrings"
     ],
@@ -8099,6 +8411,7 @@
     "level": "expert",
     "mechanic": "compound",
     "equipment": "body only",
+    "bodyweight": true,
     "primaryMuscles": [
       "shoulders"
     ],
@@ -8125,6 +8438,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -8155,6 +8469,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -8186,6 +8501,7 @@
     "level": "expert",
     "mechanic": "compound",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "hamstrings"
     ],
@@ -8218,6 +8534,7 @@
     "level": "expert",
     "mechanic": "compound",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "hamstrings"
     ],
@@ -8250,6 +8567,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "hamstrings"
     ],
@@ -8277,6 +8595,7 @@
     "level": "expert",
     "mechanic": "isolation",
     "equipment": "body only",
+    "bodyweight": true,
     "primaryMuscles": [
       "abdominals"
     ],
@@ -8300,6 +8619,7 @@
     "level": "expert",
     "mechanic": "compound",
     "equipment": "body only",
+    "bodyweight": true,
     "primaryMuscles": [
       "abdominals"
     ],
@@ -8324,6 +8644,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -8353,6 +8674,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "other",
+    "bodyweight": false,
     "primaryMuscles": [
       "chest"
     ],
@@ -8379,6 +8701,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "cable",
+    "bodyweight": false,
     "primaryMuscles": [
       "biceps"
     ],
@@ -8402,6 +8725,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "body only",
+    "bodyweight": false,
     "primaryMuscles": [
       "abductors"
     ],
@@ -8426,6 +8750,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "bands",
+    "bodyweight": false,
     "primaryMuscles": [
       "glutes"
     ],
@@ -8451,6 +8776,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "bands",
+    "bodyweight": false,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -8474,6 +8800,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "bands",
+    "bodyweight": false,
     "primaryMuscles": [
       "glutes"
     ],
@@ -8500,6 +8827,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "exercise ball",
+    "bodyweight": false,
     "primaryMuscles": [
       "lower back"
     ],
@@ -8525,6 +8853,7 @@
     "level": "beginner",
     "mechanic": null,
     "equipment": null,
+    "bodyweight": false,
     "primaryMuscles": [
       "lower back"
     ],
@@ -8549,6 +8878,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "other",
+    "bodyweight": false,
     "primaryMuscles": [
       "hamstrings"
     ],
@@ -8578,6 +8908,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "other",
+    "bodyweight": true,
     "primaryMuscles": [
       "lower back"
     ],
@@ -8606,6 +8937,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "body only",
+    "bodyweight": true,
     "primaryMuscles": [
       "lower back"
     ],
@@ -8633,6 +8965,7 @@
     "level": "intermediate",
     "mechanic": null,
     "equipment": "other",
+    "bodyweight": false,
     "primaryMuscles": [
       "abductors"
     ],
@@ -8654,6 +8987,7 @@
     "level": "intermediate",
     "mechanic": "isolation",
     "equipment": "foam roll",
+    "bodyweight": false,
     "primaryMuscles": [
       "abductors"
     ],
@@ -8676,6 +9010,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "body only",
+    "bodyweight": false,
     "primaryMuscles": [
       "hamstrings"
     ],
@@ -8700,6 +9035,7 @@
     "level": "intermediate",
     "mechanic": "isolation",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "triceps"
     ],
@@ -8727,6 +9063,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "middle back"
     ],
@@ -8756,6 +9093,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "cable",
+    "bodyweight": false,
     "primaryMuscles": [
       "chest"
     ],
@@ -8781,6 +9119,7 @@
     "level": "intermediate",
     "mechanic": "isolation",
     "equipment": "cable",
+    "bodyweight": false,
     "primaryMuscles": [
       "chest"
     ],
@@ -8808,6 +9147,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "dumbbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "chest"
     ],
@@ -8837,6 +9177,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "dumbbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "biceps"
     ],
@@ -8860,6 +9201,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "dumbbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "chest"
     ],
@@ -8887,6 +9229,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "dumbbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "chest"
     ],
@@ -8914,6 +9257,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "dumbbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "chest"
     ],
@@ -8943,6 +9287,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "dumbbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "biceps"
     ],
@@ -8965,6 +9310,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "dumbbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "biceps"
     ],
@@ -8989,6 +9335,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "body only",
+    "bodyweight": true,
     "primaryMuscles": [
       "chest"
     ],
@@ -9014,6 +9361,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "body only",
+    "bodyweight": true,
     "primaryMuscles": [
       "triceps"
     ],
@@ -9041,6 +9389,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "other",
+    "bodyweight": true,
     "primaryMuscles": [
       "chest"
     ],
@@ -9067,6 +9416,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "body only",
+    "bodyweight": true,
     "primaryMuscles": [
       "chest"
     ],
@@ -9095,6 +9445,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "body only",
+    "bodyweight": true,
     "primaryMuscles": [
       "chest"
     ],
@@ -9123,6 +9474,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "body only",
+    "bodyweight": true,
     "primaryMuscles": [
       "chest"
     ],
@@ -9151,6 +9503,7 @@
     "level": "intermediate",
     "mechanic": "isolation",
     "equipment": "other",
+    "bodyweight": false,
     "primaryMuscles": [
       "hamstrings"
     ],
@@ -9172,6 +9525,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "other",
+    "bodyweight": false,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -9193,6 +9547,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "bands",
+    "bodyweight": false,
     "primaryMuscles": [
       "shoulders"
     ],
@@ -9217,6 +9572,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": null,
+    "bodyweight": true,
     "primaryMuscles": [
       "middle back"
     ],
@@ -9243,6 +9599,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "other",
+    "bodyweight": true,
     "primaryMuscles": [
       "middle back"
     ],
@@ -9269,6 +9626,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "dumbbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "shoulders"
     ],
@@ -9294,6 +9652,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": null,
+    "bodyweight": false,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -9316,6 +9675,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "body only",
+    "bodyweight": true,
     "primaryMuscles": [
       "chest"
     ],
@@ -9343,6 +9703,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "body only",
+    "bodyweight": true,
     "primaryMuscles": [
       "neck"
     ],
@@ -9367,6 +9728,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "body only",
+    "bodyweight": true,
     "primaryMuscles": [
       "neck"
     ],
@@ -9391,6 +9753,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "body only",
+    "bodyweight": true,
     "primaryMuscles": [
       "chest"
     ],
@@ -9418,6 +9781,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "triceps"
     ],
@@ -9445,6 +9809,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "body only",
+    "bodyweight": true,
     "primaryMuscles": [
       "abdominals"
     ],
@@ -9468,6 +9833,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "body only",
+    "bodyweight": true,
     "primaryMuscles": [
       "abdominals"
     ],
@@ -9491,6 +9857,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -9523,6 +9890,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "shoulders"
     ],
@@ -9550,6 +9918,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -9574,6 +9943,7 @@
     "level": "beginner",
     "mechanic": null,
     "equipment": "machine",
+    "bodyweight": false,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -9598,6 +9968,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "other",
+    "bodyweight": false,
     "primaryMuscles": [
       "lower back"
     ],
@@ -9632,6 +10003,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "kettlebells",
+    "bodyweight": false,
     "primaryMuscles": [
       "shoulders"
     ],
@@ -9656,6 +10028,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "kettlebells",
+    "bodyweight": false,
     "primaryMuscles": [
       "hamstrings"
     ],
@@ -9684,6 +10057,7 @@
     "level": "intermediate",
     "mechanic": null,
     "equipment": "kettlebells",
+    "bodyweight": false,
     "primaryMuscles": [
       "abdominals"
     ],
@@ -9709,6 +10083,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "kettlebells",
+    "bodyweight": false,
     "primaryMuscles": [
       "shoulders"
     ],
@@ -9735,6 +10110,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "kettlebells",
+    "bodyweight": false,
     "primaryMuscles": [
       "shoulders",
       "triceps"
@@ -9761,6 +10137,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "kettlebells",
+    "bodyweight": false,
     "primaryMuscles": [
       "hamstrings"
     ],
@@ -9789,6 +10166,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "kettlebells",
+    "bodyweight": false,
     "primaryMuscles": [
       "hamstrings"
     ],
@@ -9815,6 +10193,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "kettlebells",
+    "bodyweight": false,
     "primaryMuscles": [
       "triceps"
     ],
@@ -9838,6 +10217,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "kettlebells",
+    "bodyweight": false,
     "primaryMuscles": [
       "abdominals"
     ],
@@ -9863,6 +10243,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "kettlebells",
+    "bodyweight": false,
     "primaryMuscles": [
       "shoulders"
     ],
@@ -9888,6 +10269,7 @@
     "level": "expert",
     "mechanic": "compound",
     "equipment": "kettlebells",
+    "bodyweight": true,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -9916,6 +10298,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "kettlebells",
+    "bodyweight": false,
     "primaryMuscles": [
       "shoulders"
     ],
@@ -9940,6 +10323,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "kettlebells",
+    "bodyweight": false,
     "primaryMuscles": [
       "shoulders"
     ],
@@ -9964,6 +10348,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "kettlebells",
+    "bodyweight": false,
     "primaryMuscles": [
       "traps"
     ],
@@ -9991,6 +10376,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "kettlebells",
+    "bodyweight": false,
     "primaryMuscles": [
       "shoulders"
     ],
@@ -10017,6 +10403,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "kettlebells",
+    "bodyweight": false,
     "primaryMuscles": [
       "shoulders"
     ],
@@ -10044,6 +10431,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "kettlebells",
+    "bodyweight": false,
     "primaryMuscles": [
       "shoulders"
     ],
@@ -10072,6 +10460,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "kettlebells",
+    "bodyweight": false,
     "primaryMuscles": [
       "abdominals"
     ],
@@ -10099,6 +10488,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "other",
+    "bodyweight": true,
     "primaryMuscles": [
       "lats"
     ],
@@ -10131,6 +10521,7 @@
     "level": "beginner",
     "mechanic": null,
     "equipment": null,
+    "bodyweight": false,
     "primaryMuscles": [
       "glutes"
     ],
@@ -10155,6 +10546,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "body only",
+    "bodyweight": false,
     "primaryMuscles": [
       "calves"
     ],
@@ -10180,6 +10572,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "other",
+    "bodyweight": true,
     "primaryMuscles": [
       "abdominals"
     ],
@@ -10204,6 +10597,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "body only",
+    "bodyweight": true,
     "primaryMuscles": [
       "hamstrings"
     ],
@@ -10232,6 +10626,7 @@
     "level": "beginner",
     "mechanic": null,
     "equipment": null,
+    "bodyweight": false,
     "primaryMuscles": [
       "shoulders"
     ],
@@ -10257,6 +10652,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "cable",
+    "bodyweight": false,
     "primaryMuscles": [
       "abdominals"
     ],
@@ -10285,6 +10681,7 @@
     "level": "intermediate",
     "mechanic": "isolation",
     "equipment": "cable",
+    "bodyweight": false,
     "primaryMuscles": [
       "triceps"
     ],
@@ -10311,6 +10708,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": null,
+    "bodyweight": false,
     "primaryMuscles": [
       "forearms"
     ],
@@ -10332,6 +10730,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "cable",
+    "bodyweight": false,
     "primaryMuscles": [
       "lats"
     ],
@@ -10357,6 +10756,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": null,
+    "bodyweight": false,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -10380,6 +10780,7 @@
     "level": "expert",
     "mechanic": "compound",
     "equipment": "barbell",
+    "bodyweight": true,
     "primaryMuscles": [
       "glutes"
     ],
@@ -10407,6 +10808,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "cable",
+    "bodyweight": false,
     "primaryMuscles": [
       "lats"
     ],
@@ -10433,6 +10835,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "glutes"
     ],
@@ -10459,6 +10862,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "abdominals"
     ],
@@ -10487,6 +10891,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "shoulders"
     ],
@@ -10518,6 +10923,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "body only",
+    "bodyweight": true,
     "primaryMuscles": [
       "adductors"
     ],
@@ -10548,6 +10954,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "other",
+    "bodyweight": true,
     "primaryMuscles": [
       "adductors"
     ],
@@ -10578,6 +10985,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "other",
+    "bodyweight": false,
     "primaryMuscles": [
       "adductors"
     ],
@@ -10607,6 +11015,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "bands",
+    "bodyweight": false,
     "primaryMuscles": [
       "shoulders"
     ],
@@ -10630,6 +11039,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "foam roll",
+    "bodyweight": false,
     "primaryMuscles": [
       "lats"
     ],
@@ -10651,6 +11061,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "kettlebells",
+    "bodyweight": false,
     "primaryMuscles": [
       "chest"
     ],
@@ -10676,6 +11087,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": null,
+    "bodyweight": false,
     "primaryMuscles": [
       "hamstrings"
     ],
@@ -10698,6 +11110,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "machine",
+    "bodyweight": false,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -10721,6 +11134,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "body only",
+    "bodyweight": true,
     "primaryMuscles": [
       "glutes"
     ],
@@ -10747,6 +11161,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "machine",
+    "bodyweight": false,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -10775,6 +11190,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "body only",
+    "bodyweight": true,
     "primaryMuscles": [
       "abdominals"
     ],
@@ -10798,6 +11214,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "machine",
+    "bodyweight": false,
     "primaryMuscles": [
       "chest"
     ],
@@ -10824,6 +11241,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "machine",
+    "bodyweight": false,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -10848,6 +11266,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "machine",
+    "bodyweight": false,
     "primaryMuscles": [
       "chest"
     ],
@@ -10873,6 +11292,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "machine",
+    "bodyweight": false,
     "primaryMuscles": [
       "middle back"
     ],
@@ -10898,6 +11318,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "machine",
+    "bodyweight": false,
     "primaryMuscles": [
       "chest"
     ],
@@ -10923,6 +11344,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "machine",
+    "bodyweight": false,
     "primaryMuscles": [
       "lats"
     ],
@@ -10948,6 +11370,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "machine",
+    "bodyweight": false,
     "primaryMuscles": [
       "shoulders"
     ],
@@ -10972,6 +11395,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "machine",
+    "bodyweight": false,
     "primaryMuscles": [
       "traps"
     ],
@@ -10998,6 +11422,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": null,
+    "bodyweight": false,
     "primaryMuscles": [
       "hamstrings"
     ],
@@ -11024,6 +11449,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": null,
+    "bodyweight": false,
     "primaryMuscles": [
       "hamstrings"
     ],
@@ -11051,6 +11477,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "other",
+    "bodyweight": false,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -11078,6 +11505,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "other",
+    "bodyweight": false,
     "primaryMuscles": [
       "shoulders"
     ],
@@ -11110,6 +11538,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "other",
+    "bodyweight": false,
     "primaryMuscles": [
       "lats"
     ],
@@ -11137,6 +11566,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": null,
+    "bodyweight": false,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -11158,6 +11588,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "cable",
+    "bodyweight": false,
     "primaryMuscles": [
       "chest"
     ],
@@ -11183,6 +11614,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "cable",
+    "bodyweight": false,
     "primaryMuscles": [
       "triceps"
     ],
@@ -11208,6 +11640,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "cable",
+    "bodyweight": false,
     "primaryMuscles": [
       "shoulders"
     ],
@@ -11236,6 +11669,7 @@
     "level": "beginner",
     "mechanic": null,
     "equipment": "foam roll",
+    "bodyweight": false,
     "primaryMuscles": [
       "lower back"
     ],
@@ -11257,6 +11691,7 @@
     "level": "beginner",
     "mechanic": null,
     "equipment": "body only",
+    "bodyweight": false,
     "primaryMuscles": [
       "abdominals"
     ],
@@ -11278,6 +11713,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "kettlebells",
+    "bodyweight": false,
     "primaryMuscles": [
       "hamstrings"
     ],
@@ -11306,6 +11742,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "machine",
+    "bodyweight": false,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -11333,6 +11770,7 @@
     "level": "expert",
     "mechanic": null,
     "equipment": "other",
+    "bodyweight": false,
     "primaryMuscles": [
       "adductors"
     ],
@@ -11355,6 +11793,7 @@
     "level": "intermediate",
     "mechanic": "isolation",
     "equipment": "cable",
+    "bodyweight": false,
     "primaryMuscles": [
       "biceps"
     ],
@@ -11380,6 +11819,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "middle back"
     ],
@@ -11407,6 +11847,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "cable",
+    "bodyweight": false,
     "primaryMuscles": [
       "biceps"
     ],
@@ -11433,6 +11874,7 @@
     "level": "intermediate",
     "mechanic": "isolation",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "triceps"
     ],
@@ -11457,6 +11899,7 @@
     "level": "intermediate",
     "mechanic": "isolation",
     "equipment": "e-z curl bar",
+    "bodyweight": false,
     "primaryMuscles": [
       "triceps"
     ],
@@ -11481,6 +11924,7 @@
     "level": "expert",
     "mechanic": null,
     "equipment": "body only",
+    "bodyweight": false,
     "primaryMuscles": [
       "abductors"
     ],
@@ -11504,6 +11948,7 @@
     "level": "intermediate",
     "mechanic": "isolation",
     "equipment": "dumbbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "triceps"
     ],
@@ -11530,6 +11975,7 @@
     "level": "intermediate",
     "mechanic": "isolation",
     "equipment": "other",
+    "bodyweight": false,
     "primaryMuscles": [
       "neck"
     ],
@@ -11553,6 +11999,7 @@
     "level": "intermediate",
     "mechanic": "isolation",
     "equipment": "other",
+    "bodyweight": false,
     "primaryMuscles": [
       "neck"
     ],
@@ -11576,6 +12023,7 @@
     "level": "expert",
     "mechanic": null,
     "equipment": "body only",
+    "bodyweight": false,
     "primaryMuscles": [
       "glutes"
     ],
@@ -11601,6 +12049,7 @@
     "level": "expert",
     "mechanic": null,
     "equipment": "other",
+    "bodyweight": false,
     "primaryMuscles": [
       "hamstrings"
     ],
@@ -11625,6 +12074,7 @@
     "level": "intermediate",
     "mechanic": "isolation",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "biceps"
     ],
@@ -11648,6 +12098,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "machine",
+    "bodyweight": false,
     "primaryMuscles": [
       "hamstrings"
     ],
@@ -11671,6 +12122,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "machine",
+    "bodyweight": false,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -11700,6 +12152,7 @@
     "level": "intermediate",
     "mechanic": "isolation",
     "equipment": "dumbbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "shoulders"
     ],
@@ -11724,6 +12177,7 @@
     "level": "expert",
     "mechanic": null,
     "equipment": "body only",
+    "bodyweight": false,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -11747,6 +12201,7 @@
     "level": "intermediate",
     "mechanic": "isolation",
     "equipment": "dumbbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "shoulders"
     ],
@@ -11771,6 +12226,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "dumbbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "biceps"
     ],
@@ -11795,6 +12251,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "machine",
+    "bodyweight": false,
     "primaryMuscles": [
       "middle back"
     ],
@@ -11823,6 +12280,7 @@
     "level": "intermediate",
     "mechanic": "isolation",
     "equipment": "e-z curl bar",
+    "bodyweight": false,
     "primaryMuscles": [
       "triceps"
     ],
@@ -11847,6 +12305,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "machine",
+    "bodyweight": false,
     "primaryMuscles": [
       "chest"
     ],
@@ -11876,6 +12335,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "machine",
+    "bodyweight": false,
     "primaryMuscles": [
       "biceps"
     ],
@@ -11899,6 +12359,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "machine",
+    "bodyweight": false,
     "primaryMuscles": [
       "biceps"
     ],
@@ -11923,6 +12384,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "machine",
+    "bodyweight": false,
     "primaryMuscles": [
       "shoulders"
     ],
@@ -11949,6 +12411,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "machine",
+    "bodyweight": false,
     "primaryMuscles": [
       "triceps"
     ],
@@ -11972,6 +12435,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "medicine ball",
+    "bodyweight": false,
     "primaryMuscles": [
       "chest"
     ],
@@ -11999,6 +12463,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "medicine ball",
+    "bodyweight": false,
     "primaryMuscles": [
       "abdominals"
     ],
@@ -12024,6 +12489,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "medicine ball",
+    "bodyweight": false,
     "primaryMuscles": [
       "shoulders"
     ],
@@ -12050,6 +12516,7 @@
     "level": "intermediate",
     "mechanic": "isolation",
     "equipment": "dumbbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "middle back"
     ],
@@ -12073,6 +12540,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": null,
+    "bodyweight": false,
     "primaryMuscles": [
       "middle back"
     ],
@@ -12098,6 +12566,7 @@
     "level": "expert",
     "mechanic": "compound",
     "equipment": "other",
+    "bodyweight": true,
     "primaryMuscles": [
       "middle back"
     ],
@@ -12125,6 +12594,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "bands",
+    "bodyweight": false,
     "primaryMuscles": [
       "abductors"
     ],
@@ -12147,6 +12617,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": null,
+    "bodyweight": true,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -12172,6 +12643,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": null,
+    "bodyweight": false,
     "primaryMuscles": [
       "hamstrings"
     ],
@@ -12197,6 +12669,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "hamstrings"
     ],
@@ -12225,6 +12698,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "other",
+    "bodyweight": true,
     "primaryMuscles": [
       "lats"
     ],
@@ -12256,6 +12730,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "machine",
+    "bodyweight": false,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -12286,6 +12761,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "machine",
+    "bodyweight": false,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -12314,6 +12790,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -12344,6 +12821,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "body only",
+    "bodyweight": true,
     "primaryMuscles": [
       "hamstrings"
     ],
@@ -12371,6 +12849,7 @@
     "level": "intermediate",
     "mechanic": null,
     "equipment": "other",
+    "bodyweight": false,
     "primaryMuscles": [
       "neck"
     ],
@@ -12392,6 +12871,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "chest"
     ],
@@ -12419,6 +12899,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "body only",
+    "bodyweight": true,
     "primaryMuscles": [
       "abdominals"
     ],
@@ -12445,6 +12926,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "body only",
+    "bodyweight": true,
     "primaryMuscles": [
       "abdominals"
     ],
@@ -12469,6 +12951,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -12495,6 +12978,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "other",
+    "bodyweight": false,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -12518,6 +13002,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": null,
+    "bodyweight": false,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -12539,6 +13024,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "dumbbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "middle back"
     ],
@@ -12569,6 +13055,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "dumbbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "chest"
     ],
@@ -12594,6 +13081,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "cable",
+    "bodyweight": false,
     "primaryMuscles": [
       "abdominals"
     ],
@@ -12621,6 +13109,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "dumbbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "shoulders"
     ],
@@ -12646,6 +13135,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "kettlebells",
+    "bodyweight": false,
     "primaryMuscles": [
       "hamstrings"
     ],
@@ -12673,6 +13163,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "kettlebells",
+    "bodyweight": false,
     "primaryMuscles": [
       "shoulders"
     ],
@@ -12698,6 +13189,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "kettlebells",
+    "bodyweight": false,
     "primaryMuscles": [
       "chest"
     ],
@@ -12722,6 +13214,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "kettlebells",
+    "bodyweight": false,
     "primaryMuscles": [
       "shoulders"
     ],
@@ -12749,6 +13242,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "kettlebells",
+    "bodyweight": false,
     "primaryMuscles": [
       "shoulders"
     ],
@@ -12773,6 +13267,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "kettlebells",
+    "bodyweight": false,
     "primaryMuscles": [
       "shoulders"
     ],
@@ -12797,6 +13292,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "kettlebells",
+    "bodyweight": false,
     "primaryMuscles": [
       "shoulders"
     ],
@@ -12823,6 +13319,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "kettlebells",
+    "bodyweight": false,
     "primaryMuscles": [
       "middle back"
     ],
@@ -12846,6 +13343,7 @@
     "level": "expert",
     "mechanic": "compound",
     "equipment": "kettlebells",
+    "bodyweight": false,
     "primaryMuscles": [
       "shoulders"
     ],
@@ -12875,6 +13373,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "kettlebells",
+    "bodyweight": false,
     "primaryMuscles": [
       "shoulders"
     ],
@@ -12904,6 +13403,7 @@
     "level": "expert",
     "mechanic": "compound",
     "equipment": "kettlebells",
+    "bodyweight": false,
     "primaryMuscles": [
       "shoulders"
     ],
@@ -12930,6 +13430,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "kettlebells",
+    "bodyweight": false,
     "primaryMuscles": [
       "hamstrings"
     ],
@@ -12953,6 +13454,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "middle back"
     ],
@@ -12980,6 +13482,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "medicine ball",
+    "bodyweight": false,
     "primaryMuscles": [
       "abdominals"
     ],
@@ -13006,6 +13509,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "kettlebells",
+    "bodyweight": false,
     "primaryMuscles": [
       "hamstrings"
     ],
@@ -13035,6 +13539,7 @@
     "level": "expert",
     "mechanic": "compound",
     "equipment": "kettlebells",
+    "bodyweight": false,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -13062,6 +13567,7 @@
     "level": "expert",
     "mechanic": "compound",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -13094,6 +13600,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "dumbbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "shoulders"
     ],
@@ -13119,6 +13626,7 @@
     "level": "intermediate",
     "mechanic": "isolation",
     "equipment": "cable",
+    "bodyweight": false,
     "primaryMuscles": [
       "glutes"
     ],
@@ -13146,6 +13654,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": null,
+    "bodyweight": false,
     "primaryMuscles": [
       "lats"
     ],
@@ -13167,6 +13676,7 @@
     "level": "expert",
     "mechanic": "compound",
     "equipment": "other",
+    "bodyweight": true,
     "primaryMuscles": [
       "middle back"
     ],
@@ -13197,6 +13707,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "dumbbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "chest"
     ],
@@ -13226,6 +13737,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "dumbbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "biceps"
     ],
@@ -13250,6 +13762,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "triceps"
     ],
@@ -13279,6 +13792,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "cable",
+    "bodyweight": false,
     "primaryMuscles": [
       "lats"
     ],
@@ -13305,6 +13819,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "dumbbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "triceps"
     ],
@@ -13330,6 +13845,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "dumbbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "triceps"
     ],
@@ -13356,6 +13872,7 @@
     "level": "beginner",
     "mechanic": null,
     "equipment": null,
+    "bodyweight": false,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -13383,6 +13900,7 @@
     "level": "beginner",
     "mechanic": null,
     "equipment": "other",
+    "bodyweight": false,
     "primaryMuscles": [
       "lats"
     ],
@@ -13405,6 +13923,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": null,
+    "bodyweight": false,
     "primaryMuscles": [
       "glutes"
     ],
@@ -13431,6 +13950,7 @@
     "level": "expert",
     "mechanic": "compound",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -13461,6 +13981,7 @@
     "level": "expert",
     "mechanic": "compound",
     "equipment": "kettlebells",
+    "bodyweight": false,
     "primaryMuscles": [
       "hamstrings"
     ],
@@ -13488,6 +14009,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "other",
+    "bodyweight": false,
     "primaryMuscles": [
       "abdominals"
     ],
@@ -13515,6 +14037,7 @@
     "level": "intermediate",
     "mechanic": "isolation",
     "equipment": "cable",
+    "bodyweight": false,
     "primaryMuscles": [
       "biceps"
     ],
@@ -13540,6 +14063,7 @@
     "level": "expert",
     "mechanic": null,
     "equipment": "other",
+    "bodyweight": false,
     "primaryMuscles": [
       "lats"
     ],
@@ -13564,6 +14088,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "medicine ball",
+    "bodyweight": false,
     "primaryMuscles": [
       "lats"
     ],
@@ -13587,6 +14112,7 @@
     "level": "expert",
     "mechanic": "compound",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -13620,6 +14146,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": null,
+    "bodyweight": false,
     "primaryMuscles": [
       "abdominals"
     ],
@@ -13646,6 +14173,7 @@
     "level": "expert",
     "mechanic": null,
     "equipment": "body only",
+    "bodyweight": false,
     "primaryMuscles": [
       "triceps"
     ],
@@ -13670,6 +14198,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "cable",
+    "bodyweight": false,
     "primaryMuscles": [
       "abdominals"
     ],
@@ -13699,6 +14228,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "cable",
+    "bodyweight": false,
     "primaryMuscles": [
       "abdominals"
     ],
@@ -13731,6 +14261,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "dumbbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "forearms"
     ],
@@ -13757,6 +14288,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "forearms"
     ],
@@ -13783,6 +14315,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "forearms"
     ],
@@ -13809,6 +14342,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "dumbbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "forearms"
     ],
@@ -13835,6 +14369,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "other",
+    "bodyweight": true,
     "primaryMuscles": [
       "triceps"
     ],
@@ -13861,6 +14396,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": null,
+    "bodyweight": false,
     "primaryMuscles": [
       "lower back"
     ],
@@ -13883,6 +14419,7 @@
     "level": "intermediate",
     "mechanic": null,
     "equipment": "foam roll",
+    "bodyweight": false,
     "primaryMuscles": [
       "calves"
     ],
@@ -13904,6 +14441,7 @@
     "level": "intermediate",
     "mechanic": null,
     "equipment": "other",
+    "bodyweight": false,
     "primaryMuscles": [
       "calves"
     ],
@@ -13925,6 +14463,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "exercise ball",
+    "bodyweight": true,
     "primaryMuscles": [
       "glutes"
     ],
@@ -13949,6 +14488,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "triceps"
     ],
@@ -13980,6 +14520,7 @@
     "level": "intermediate",
     "mechanic": "isolation",
     "equipment": "foam roll",
+    "bodyweight": false,
     "primaryMuscles": [
       "glutes"
     ],
@@ -14001,6 +14542,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "body only",
+    "bodyweight": true,
     "primaryMuscles": [
       "abdominals"
     ],
@@ -14022,6 +14564,7 @@
     "level": "intermediate",
     "mechanic": "isolation",
     "equipment": "other",
+    "bodyweight": false,
     "primaryMuscles": [
       "forearms"
     ],
@@ -14046,6 +14589,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "other",
+    "bodyweight": false,
     "primaryMuscles": [
       "abdominals"
     ],
@@ -14070,6 +14614,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "other",
+    "bodyweight": false,
     "primaryMuscles": [
       "hamstrings"
     ],
@@ -14095,6 +14640,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "dumbbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -14124,6 +14670,7 @@
     "level": "expert",
     "mechanic": "compound",
     "equipment": "kettlebells",
+    "bodyweight": true,
     "primaryMuscles": [
       "chest"
     ],
@@ -14149,6 +14696,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "body only",
+    "bodyweight": true,
     "primaryMuscles": [
       "chest"
     ],
@@ -14177,6 +14725,7 @@
     "level": "intermediate",
     "mechanic": null,
     "equipment": "other",
+    "bodyweight": false,
     "primaryMuscles": [
       "calves"
     ],
@@ -14198,6 +14747,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "hamstrings"
     ],
@@ -14251,6 +14801,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "hamstrings"
     ],
@@ -14277,6 +14828,7 @@
     "level": "expert",
     "mechanic": "compound",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -14308,6 +14860,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "dumbbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "shoulders"
     ],
@@ -14332,6 +14885,7 @@
     "level": "expert",
     "mechanic": "compound",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "hamstrings"
     ],
@@ -14364,6 +14918,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -14397,6 +14952,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "other",
+    "bodyweight": false,
     "primaryMuscles": [
       "hamstrings"
     ],
@@ -14428,6 +14984,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "biceps"
     ],
@@ -14452,6 +15009,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "dumbbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "biceps"
     ],
@@ -14477,6 +15035,7 @@
     "level": "expert",
     "mechanic": "compound",
     "equipment": "barbell",
+    "bodyweight": true,
     "primaryMuscles": [
       "abdominals"
     ],
@@ -14504,6 +15063,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": null,
+    "bodyweight": false,
     "primaryMuscles": [
       "hamstrings"
     ],
@@ -14526,6 +15086,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "other",
+    "bodyweight": false,
     "primaryMuscles": [
       "hamstrings"
     ],
@@ -14554,6 +15115,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "cable",
+    "bodyweight": false,
     "primaryMuscles": [
       "glutes"
     ],
@@ -14578,6 +15140,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "body only",
+    "bodyweight": true,
     "primaryMuscles": [
       "lats"
     ],
@@ -14605,6 +15168,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "body only",
+    "bodyweight": true,
     "primaryMuscles": [
       "chest"
     ],
@@ -14632,6 +15196,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "body only",
+    "bodyweight": true,
     "primaryMuscles": [
       "triceps"
     ],
@@ -14658,6 +15223,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "body only",
+    "bodyweight": true,
     "primaryMuscles": [
       "chest"
     ],
@@ -14685,6 +15251,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "exercise ball",
+    "bodyweight": true,
     "primaryMuscles": [
       "chest"
     ],
@@ -14712,6 +15279,7 @@
     "level": "expert",
     "mechanic": "compound",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "shoulders"
     ],
@@ -14733,6 +15301,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "shoulders"
     ],
@@ -14759,6 +15328,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "body only",
+    "bodyweight": true,
     "primaryMuscles": [
       "chest"
     ],
@@ -14787,6 +15357,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "body only",
+    "bodyweight": true,
     "primaryMuscles": [
       "chest"
     ],
@@ -14813,6 +15384,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "body only",
+    "bodyweight": true,
     "primaryMuscles": [
       "chest"
     ],
@@ -14839,6 +15411,7 @@
     "level": "beginner",
     "mechanic": null,
     "equipment": "exercise ball",
+    "bodyweight": false,
     "primaryMuscles": [
       "lower back"
     ],
@@ -14862,6 +15435,7 @@
     "level": "intermediate",
     "mechanic": null,
     "equipment": "other",
+    "bodyweight": false,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -14883,6 +15457,7 @@
     "level": "intermediate",
     "mechanic": "isolation",
     "equipment": "foam roll",
+    "bodyweight": false,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -14904,6 +15479,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "other",
+    "bodyweight": false,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -14930,6 +15506,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "shoulders"
     ],
@@ -14955,6 +15532,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "lower back"
     ],
@@ -14983,6 +15561,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "lower back"
     ],
@@ -15010,6 +15589,7 @@
     "level": "beginner",
     "mechanic": null,
     "equipment": "body only",
+    "bodyweight": false,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -15031,6 +15611,7 @@
     "level": "beginner",
     "mechanic": null,
     "equipment": "machine",
+    "bodyweight": false,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -15057,6 +15638,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "medicine ball",
+    "bodyweight": false,
     "primaryMuscles": [
       "shoulders"
     ],
@@ -15084,6 +15666,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "triceps"
     ],
@@ -15113,6 +15696,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -15144,6 +15728,7 @@
     "level": "expert",
     "mechanic": "compound",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "lower back"
     ],
@@ -15175,6 +15760,7 @@
     "level": "expert",
     "mechanic": "compound",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -15204,6 +15790,7 @@
     "level": "expert",
     "mechanic": "compound",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "hamstrings"
     ],
@@ -15237,6 +15824,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "biceps"
     ],
@@ -15262,6 +15850,7 @@
     "level": "intermediate",
     "mechanic": "isolation",
     "equipment": "e-z curl bar",
+    "bodyweight": false,
     "primaryMuscles": [
       "biceps"
     ],
@@ -15288,6 +15877,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "cable",
+    "bodyweight": false,
     "primaryMuscles": [
       "biceps"
     ],
@@ -15313,6 +15903,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "body only",
+    "bodyweight": true,
     "primaryMuscles": [
       "abdominals"
     ],
@@ -15337,6 +15928,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "dumbbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "shoulders"
     ],
@@ -15362,6 +15954,7 @@
     "level": "intermediate",
     "mechanic": "isolation",
     "equipment": "dumbbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "shoulders"
     ],
@@ -15388,6 +15981,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "middle back"
     ],
@@ -15416,6 +16010,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "cable",
+    "bodyweight": false,
     "primaryMuscles": [
       "triceps"
     ],
@@ -15440,6 +16035,7 @@
     "level": "intermediate",
     "mechanic": null,
     "equipment": "machine",
+    "bodyweight": true,
     "primaryMuscles": [
       "hamstrings"
     ],
@@ -15467,6 +16063,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "machine",
+    "bodyweight": false,
     "primaryMuscles": [
       "shoulders"
     ],
@@ -15490,6 +16087,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "other",
+    "bodyweight": false,
     "primaryMuscles": [
       "biceps"
     ],
@@ -15516,6 +16114,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "triceps"
     ],
@@ -15543,6 +16142,7 @@
     "level": "intermediate",
     "mechanic": null,
     "equipment": "foam roll",
+    "bodyweight": false,
     "primaryMuscles": [
       "middle back"
     ],
@@ -15566,6 +16166,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "other",
+    "bodyweight": false,
     "primaryMuscles": [
       "forearms"
     ],
@@ -15595,6 +16196,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "other",
+    "bodyweight": false,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -15623,6 +16225,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "other",
+    "bodyweight": true,
     "primaryMuscles": [
       "triceps"
     ],
@@ -15649,6 +16252,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "body only",
+    "bodyweight": true,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -15674,6 +16278,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "calves"
     ],
@@ -15701,6 +16306,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "other",
+    "bodyweight": false,
     "primaryMuscles": [
       "lats"
     ],
@@ -15730,6 +16336,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "hamstrings"
     ],
@@ -15758,6 +16365,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "hamstrings"
     ],
@@ -15785,6 +16393,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "other",
+    "bodyweight": false,
     "primaryMuscles": [
       "lats"
     ],
@@ -15814,6 +16423,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "cable",
+    "bodyweight": false,
     "primaryMuscles": [
       "abdominals"
     ],
@@ -15838,6 +16448,7 @@
     "level": "intermediate",
     "mechanic": null,
     "equipment": "other",
+    "bodyweight": false,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -15862,6 +16473,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "cable",
+    "bodyweight": false,
     "primaryMuscles": [
       "lats"
     ],
@@ -15885,6 +16497,7 @@
     "level": "beginner",
     "mechanic": null,
     "equipment": "other",
+    "bodyweight": false,
     "primaryMuscles": [
       "shoulders"
     ],
@@ -15910,6 +16523,7 @@
     "level": "intermediate",
     "mechanic": null,
     "equipment": "machine",
+    "bodyweight": false,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -15939,6 +16553,7 @@
     "level": "beginner",
     "mechanic": null,
     "equipment": null,
+    "bodyweight": false,
     "primaryMuscles": [
       "hamstrings"
     ],
@@ -15963,6 +16578,7 @@
     "level": "beginner",
     "mechanic": null,
     "equipment": "machine",
+    "bodyweight": false,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -15988,6 +16604,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "body only",
+    "bodyweight": true,
     "primaryMuscles": [
       "abdominals"
     ],
@@ -16014,6 +16631,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "other",
+    "bodyweight": false,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -16048,6 +16666,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": null,
+    "bodyweight": true,
     "primaryMuscles": [
       "traps"
     ],
@@ -16073,6 +16692,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "body only",
+    "bodyweight": false,
     "primaryMuscles": [
       "abdominals"
     ],
@@ -16097,6 +16717,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "body only",
+    "bodyweight": true,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -16123,6 +16744,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "other",
+    "bodyweight": false,
     "primaryMuscles": [
       "hamstrings"
     ],
@@ -16146,6 +16768,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "shoulders"
     ],
@@ -16172,6 +16795,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "abdominals"
     ],
@@ -16197,6 +16821,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "dumbbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "triceps"
     ],
@@ -16223,6 +16848,7 @@
     "level": "intermediate",
     "mechanic": "isolation",
     "equipment": "dumbbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "shoulders"
     ],
@@ -16248,6 +16874,7 @@
     "level": "intermediate",
     "mechanic": "isolation",
     "equipment": "dumbbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "triceps"
     ],
@@ -16273,6 +16900,7 @@
     "level": "expert",
     "mechanic": "isolation",
     "equipment": "body only",
+    "bodyweight": false,
     "primaryMuscles": [
       "biceps"
     ],
@@ -16298,6 +16926,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "cable",
+    "bodyweight": false,
     "primaryMuscles": [
       "middle back"
     ],
@@ -16326,6 +16955,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "cable",
+    "bodyweight": false,
     "primaryMuscles": [
       "shoulders"
     ],
@@ -16351,6 +16981,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "machine",
+    "bodyweight": false,
     "primaryMuscles": [
       "calves"
     ],
@@ -16376,6 +17007,7 @@
     "level": "beginner",
     "mechanic": null,
     "equipment": null,
+    "bodyweight": false,
     "primaryMuscles": [
       "calves"
     ],
@@ -16402,6 +17034,7 @@
     "level": "intermediate",
     "mechanic": "isolation",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "biceps"
     ],
@@ -16426,6 +17059,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "dumbbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "biceps"
     ],
@@ -16450,6 +17084,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "dumbbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "biceps"
     ],
@@ -16475,6 +17110,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "dumbbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "forearms"
     ],
@@ -16501,6 +17137,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "dumbbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "forearms"
     ],
@@ -16527,6 +17164,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "dumbbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "shoulders"
     ],
@@ -16554,6 +17192,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "body only",
+    "bodyweight": true,
     "primaryMuscles": [
       "abdominals"
     ],
@@ -16577,6 +17216,7 @@
     "level": "beginner",
     "mechanic": null,
     "equipment": null,
+    "bodyweight": false,
     "primaryMuscles": [
       "hamstrings"
     ],
@@ -16600,6 +17240,7 @@
     "level": "expert",
     "mechanic": null,
     "equipment": "body only",
+    "bodyweight": false,
     "primaryMuscles": [
       "shoulders"
     ],
@@ -16624,6 +17265,7 @@
     "level": "expert",
     "mechanic": null,
     "equipment": "body only",
+    "bodyweight": false,
     "primaryMuscles": [
       "glutes"
     ],
@@ -16648,6 +17290,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "lower back"
     ],
@@ -16673,6 +17316,7 @@
     "level": "expert",
     "mechanic": null,
     "equipment": null,
+    "bodyweight": false,
     "primaryMuscles": [
       "hamstrings"
     ],
@@ -16697,6 +17341,7 @@
     "level": "intermediate",
     "mechanic": null,
     "equipment": "other",
+    "bodyweight": false,
     "primaryMuscles": [
       "hamstrings"
     ],
@@ -16720,6 +17365,7 @@
     "level": "intermediate",
     "mechanic": "isolation",
     "equipment": "other",
+    "bodyweight": false,
     "primaryMuscles": [
       "neck"
     ],
@@ -16745,6 +17391,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "machine",
+    "bodyweight": false,
     "primaryMuscles": [
       "hamstrings"
     ],
@@ -16769,6 +17416,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "body only",
+    "bodyweight": true,
     "primaryMuscles": [
       "abdominals"
     ],
@@ -16792,6 +17440,7 @@
     "level": "intermediate",
     "mechanic": "isolation",
     "equipment": "dumbbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "forearms"
     ],
@@ -16817,6 +17466,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "dumbbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "forearms"
     ],
@@ -16842,6 +17492,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "cable",
+    "bodyweight": false,
     "primaryMuscles": [
       "middle back"
     ],
@@ -16871,6 +17522,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": null,
+    "bodyweight": false,
     "primaryMuscles": [
       "abdominals"
     ],
@@ -16894,6 +17546,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "forearms"
     ],
@@ -16918,6 +17571,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "forearms"
     ],
@@ -16942,6 +17596,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "dumbbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "shoulders"
     ],
@@ -16965,6 +17620,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "dumbbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "triceps"
     ],
@@ -16988,6 +17644,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "cable",
+    "bodyweight": false,
     "primaryMuscles": [
       "forearms"
     ],
@@ -17016,6 +17673,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "dumbbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "shoulders"
     ],
@@ -17043,6 +17701,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "cable",
+    "bodyweight": false,
     "primaryMuscles": [
       "lats"
     ],
@@ -17069,6 +17728,7 @@
     "level": "beginner",
     "mechanic": null,
     "equipment": null,
+    "bodyweight": false,
     "primaryMuscles": [
       "shoulders"
     ],
@@ -17092,6 +17752,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "bands",
+    "bodyweight": false,
     "primaryMuscles": [
       "shoulders"
     ],
@@ -17116,6 +17777,7 @@
     "level": "beginner",
     "mechanic": null,
     "equipment": null,
+    "bodyweight": false,
     "primaryMuscles": [
       "shoulders"
     ],
@@ -17138,6 +17800,7 @@
     "level": "beginner",
     "mechanic": null,
     "equipment": null,
+    "bodyweight": false,
     "primaryMuscles": [
       "shoulders"
     ],
@@ -17158,6 +17821,7 @@
     "level": "beginner",
     "mechanic": null,
     "equipment": null,
+    "bodyweight": false,
     "primaryMuscles": [
       "lats"
     ],
@@ -17179,6 +17843,7 @@
     "level": "beginner",
     "mechanic": null,
     "equipment": "body only",
+    "bodyweight": true,
     "primaryMuscles": [
       "abdominals"
     ],
@@ -17199,6 +17864,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "other",
+    "bodyweight": false,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -17226,6 +17892,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "body only",
+    "bodyweight": true,
     "primaryMuscles": [
       "abdominals"
     ],
@@ -17244,6 +17911,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "dumbbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "shoulders"
     ],
@@ -17267,6 +17935,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "dumbbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "shoulders"
     ],
@@ -17294,6 +17963,7 @@
     "level": "beginner",
     "mechanic": null,
     "equipment": "body only",
+    "bodyweight": false,
     "primaryMuscles": [
       "adductors"
     ],
@@ -17316,6 +17986,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": null,
+    "bodyweight": false,
     "primaryMuscles": [
       "adductors"
     ],
@@ -17340,6 +18011,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": null,
+    "bodyweight": false,
     "primaryMuscles": [
       "neck"
     ],
@@ -17361,6 +18033,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": null,
+    "bodyweight": false,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -17387,6 +18060,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "other",
+    "bodyweight": false,
     "primaryMuscles": [
       "lats"
     ],
@@ -17418,6 +18092,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": null,
+    "bodyweight": false,
     "primaryMuscles": [
       "shoulders"
     ],
@@ -17442,6 +18117,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "other",
+    "bodyweight": false,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -17469,6 +18145,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "cable",
+    "bodyweight": false,
     "primaryMuscles": [
       "chest"
     ],
@@ -17493,6 +18170,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "shoulders"
     ],
@@ -17519,6 +18197,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "body only",
+    "bodyweight": true,
     "primaryMuscles": [
       "chest"
     ],
@@ -17545,6 +18224,7 @@
     "level": "beginner",
     "mechanic": null,
     "equipment": "other",
+    "bodyweight": false,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -17571,6 +18251,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "other",
+    "bodyweight": false,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -17596,6 +18277,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "other",
+    "bodyweight": false,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -17624,6 +18306,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "other",
+    "bodyweight": false,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -17652,6 +18335,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "machine",
+    "bodyweight": false,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -17675,6 +18359,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "other",
+    "bodyweight": false,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -17702,6 +18387,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "dumbbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "shoulders"
     ],
@@ -17727,6 +18413,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "body only",
+    "bodyweight": true,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -17753,6 +18440,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "body only",
+    "bodyweight": true,
     "primaryMuscles": [
       "glutes"
     ],
@@ -17778,6 +18466,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "other",
+    "bodyweight": false,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -17803,6 +18492,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "body only",
+    "bodyweight": true,
     "primaryMuscles": [
       "abdominals"
     ],
@@ -17827,6 +18517,7 @@
     "level": "beginner",
     "mechanic": null,
     "equipment": null,
+    "bodyweight": false,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -17853,6 +18544,7 @@
     "level": "intermediate",
     "mechanic": null,
     "equipment": "other",
+    "bodyweight": false,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -17880,6 +18572,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "other",
+    "bodyweight": false,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -17905,6 +18598,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "other",
+    "bodyweight": false,
     "primaryMuscles": [
       "shoulders"
     ],
@@ -17931,6 +18625,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "other",
+    "bodyweight": false,
     "primaryMuscles": [
       "triceps"
     ],
@@ -17954,6 +18649,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "other",
+    "bodyweight": false,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -17981,6 +18677,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "other",
+    "bodyweight": false,
     "primaryMuscles": [
       "shoulders"
     ],
@@ -18004,6 +18701,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "other",
+    "bodyweight": false,
     "primaryMuscles": [
       "middle back"
     ],
@@ -18030,6 +18728,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "other",
+    "bodyweight": false,
     "primaryMuscles": [
       "abdominals"
     ],
@@ -18059,6 +18758,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "shoulders"
     ],
@@ -18086,6 +18786,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "machine",
+    "bodyweight": false,
     "primaryMuscles": [
       "traps"
     ],
@@ -18112,6 +18813,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "machine",
+    "bodyweight": false,
     "primaryMuscles": [
       "chest"
     ],
@@ -18139,6 +18841,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "machine",
+    "bodyweight": false,
     "primaryMuscles": [
       "middle back"
     ],
@@ -18168,6 +18871,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "machine",
+    "bodyweight": false,
     "primaryMuscles": [
       "calves"
     ],
@@ -18192,6 +18896,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "machine",
+    "bodyweight": false,
     "primaryMuscles": [
       "triceps"
     ],
@@ -18219,6 +18924,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "machine",
+    "bodyweight": false,
     "primaryMuscles": [
       "chest"
     ],
@@ -18246,6 +18952,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "machine",
+    "bodyweight": false,
     "primaryMuscles": [
       "hamstrings"
     ],
@@ -18277,6 +18984,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "machine",
+    "bodyweight": false,
     "primaryMuscles": [
       "abdominals"
     ],
@@ -18300,6 +19008,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "machine",
+    "bodyweight": false,
     "primaryMuscles": [
       "chest"
     ],
@@ -18327,6 +19036,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "machine",
+    "bodyweight": false,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -18353,6 +19063,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "machine",
+    "bodyweight": false,
     "primaryMuscles": [
       "shoulders"
     ],
@@ -18380,6 +19091,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "machine",
+    "bodyweight": false,
     "primaryMuscles": [
       "shoulders"
     ],
@@ -18406,6 +19118,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "machine",
+    "bodyweight": false,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -18434,6 +19147,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "machine",
+    "bodyweight": false,
     "primaryMuscles": [
       "calves"
     ],
@@ -18459,6 +19173,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "machine",
+    "bodyweight": false,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -18489,6 +19204,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "machine",
+    "bodyweight": false,
     "primaryMuscles": [
       "hamstrings"
     ],
@@ -18516,6 +19232,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "machine",
+    "bodyweight": false,
     "primaryMuscles": [
       "traps"
     ],
@@ -18544,6 +19261,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "machine",
+    "bodyweight": false,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -18574,6 +19292,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -18608,6 +19327,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -18637,6 +19357,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "hamstrings"
     ],
@@ -18666,6 +19387,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "hamstrings"
     ],
@@ -18695,6 +19417,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "traps"
     ],
@@ -18719,6 +19442,7 @@
     "level": "expert",
     "mechanic": "compound",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -18752,6 +19476,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "bands",
+    "bodyweight": false,
     "primaryMuscles": [
       "triceps"
     ],
@@ -18775,6 +19500,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -18803,6 +19529,7 @@
     "level": "expert",
     "mechanic": "compound",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -18833,6 +19560,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "dumbbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "abdominals"
     ],
@@ -18859,6 +19587,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "body only",
+    "bodyweight": true,
     "primaryMuscles": [
       "abdominals"
     ],
@@ -18885,6 +19614,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "e-z curl bar",
+    "bodyweight": false,
     "primaryMuscles": [
       "biceps"
     ],
@@ -18911,6 +19641,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": null,
+    "bodyweight": false,
     "primaryMuscles": [
       "middle back"
     ],
@@ -18939,6 +19670,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -18972,6 +19704,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -19000,6 +19733,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "body only",
+    "bodyweight": true,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -19028,6 +19762,7 @@
     "level": "expert",
     "mechanic": "compound",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "hamstrings"
     ],
@@ -19063,6 +19798,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "dumbbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -19089,6 +19825,7 @@
     "level": "intermediate",
     "mechanic": null,
     "equipment": null,
+    "bodyweight": false,
     "primaryMuscles": [
       "hamstrings"
     ],
@@ -19114,6 +19851,7 @@
     "level": "expert",
     "mechanic": "compound",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -19142,6 +19880,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -19171,6 +19910,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -19200,6 +19940,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -19233,6 +19974,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "bands",
+    "bodyweight": false,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -19262,6 +20004,7 @@
     "level": "intermediate",
     "mechanic": null,
     "equipment": "machine",
+    "bodyweight": false,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -19288,6 +20031,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "dumbbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "shoulders"
     ],
@@ -19313,6 +20057,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "calves"
     ],
@@ -19338,6 +20083,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "shoulders"
     ],
@@ -19365,6 +20111,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "dumbbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "triceps"
     ],
@@ -19392,6 +20139,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "dumbbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "triceps"
     ],
@@ -19415,6 +20163,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "cable",
+    "bodyweight": false,
     "primaryMuscles": [
       "biceps"
     ],
@@ -19438,6 +20187,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "other",
+    "bodyweight": false,
     "primaryMuscles": [
       "biceps"
     ],
@@ -19462,6 +20212,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "shoulders"
     ],
@@ -19489,6 +20240,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "cable",
+    "bodyweight": false,
     "primaryMuscles": [
       "chest"
     ],
@@ -19515,6 +20267,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "cable",
+    "bodyweight": false,
     "primaryMuscles": [
       "abdominals"
     ],
@@ -19544,6 +20297,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "cable",
+    "bodyweight": false,
     "primaryMuscles": [
       "abdominals"
     ],
@@ -19573,6 +20327,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "machine",
+    "bodyweight": false,
     "primaryMuscles": [
       "calves"
     ],
@@ -19597,6 +20352,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "dumbbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "biceps"
     ],
@@ -19622,6 +20378,7 @@
     "level": "intermediate",
     "mechanic": "isolation",
     "equipment": "dumbbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "calves"
     ],
@@ -19645,6 +20402,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "dumbbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "shoulders"
     ],
@@ -19669,6 +20427,7 @@
     "level": "intermediate",
     "mechanic": "isolation",
     "equipment": "dumbbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "biceps"
     ],
@@ -19694,6 +20453,7 @@
     "level": "intermediate",
     "mechanic": "isolation",
     "equipment": "dumbbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "shoulders"
     ],
@@ -19718,6 +20478,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "dumbbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "triceps"
     ],
@@ -19742,6 +20503,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "dumbbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "traps"
     ],
@@ -19768,6 +20530,7 @@
     "level": "beginner",
     "mechanic": null,
     "equipment": "other",
+    "bodyweight": false,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -19790,6 +20553,7 @@
     "level": "intermediate",
     "mechanic": "isolation",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "shoulders"
     ],
@@ -19814,6 +20578,7 @@
     "level": "beginner",
     "mechanic": null,
     "equipment": null,
+    "bodyweight": false,
     "primaryMuscles": [
       "calves"
     ],
@@ -19838,6 +20603,7 @@
     "level": "beginner",
     "mechanic": null,
     "equipment": "other",
+    "bodyweight": false,
     "primaryMuscles": [
       "hamstrings"
     ],
@@ -19860,6 +20626,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "body only",
+    "bodyweight": false,
     "primaryMuscles": [
       "abductors"
     ],
@@ -19885,6 +20652,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": null,
+    "bodyweight": false,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -19906,6 +20674,7 @@
     "level": "intermediate",
     "mechanic": "isolation",
     "equipment": "dumbbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "biceps"
     ],
@@ -19932,6 +20701,7 @@
     "level": "beginner",
     "mechanic": null,
     "equipment": null,
+    "bodyweight": false,
     "primaryMuscles": [
       "abdominals"
     ],
@@ -19955,6 +20725,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "machine",
+    "bodyweight": false,
     "primaryMuscles": [
       "hamstrings"
     ],
@@ -19979,6 +20750,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "body only",
+    "bodyweight": true,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -20006,6 +20778,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "cable",
+    "bodyweight": false,
     "primaryMuscles": [
       "shoulders"
     ],
@@ -20033,6 +20806,7 @@
     "level": "intermediate",
     "mechanic": "isolation",
     "equipment": "cable",
+    "bodyweight": false,
     "primaryMuscles": [
       "triceps"
     ],
@@ -20060,6 +20834,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "shoulders"
     ],
@@ -20087,6 +20862,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "other",
+    "bodyweight": false,
     "primaryMuscles": [
       "forearms"
     ],
@@ -20112,6 +20888,7 @@
     "level": "intermediate",
     "mechanic": "isolation",
     "equipment": "cable",
+    "bodyweight": false,
     "primaryMuscles": [
       "biceps"
     ],
@@ -20137,6 +20914,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "dumbbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "biceps"
     ],
@@ -20162,6 +20940,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "dumbbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "triceps"
     ],
@@ -20190,6 +20969,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "triceps"
     ],
@@ -20216,6 +20996,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "dumbbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "shoulders"
     ],
@@ -20244,6 +21025,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "dumbbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "shoulders"
     ],
@@ -20269,6 +21051,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "forearms"
     ],
@@ -20294,6 +21077,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": null,
+    "bodyweight": false,
     "primaryMuscles": [
       "lower back"
     ],
@@ -20318,6 +21102,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "cable",
+    "bodyweight": false,
     "primaryMuscles": [
       "abdominals"
     ],
@@ -20341,6 +21126,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": null,
+    "bodyweight": false,
     "primaryMuscles": [
       "calves"
     ],
@@ -20362,6 +21148,7 @@
     "level": "beginner",
     "mechanic": null,
     "equipment": null,
+    "bodyweight": false,
     "primaryMuscles": [
       "hamstrings"
     ],
@@ -20385,6 +21172,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "body only",
+    "bodyweight": true,
     "primaryMuscles": [
       "triceps"
     ],
@@ -20408,6 +21196,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "medicine ball",
+    "bodyweight": false,
     "primaryMuscles": [
       "shoulders"
     ],
@@ -20433,6 +21222,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "body only",
+    "bodyweight": true,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -20460,6 +21250,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "body only",
+    "bodyweight": true,
     "primaryMuscles": [
       "glutes"
     ],
@@ -20485,6 +21276,7 @@
     "level": "intermediate",
     "mechanic": null,
     "equipment": "machine",
+    "bodyweight": false,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -20510,6 +21302,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "hamstrings"
     ],
@@ -20537,6 +21330,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "dumbbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "hamstrings"
     ],
@@ -20564,6 +21358,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "lower back"
     ],
@@ -20592,6 +21387,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "body only",
+    "bodyweight": false,
     "primaryMuscles": [
       "abdominals"
     ],
@@ -20616,6 +21412,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "dumbbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "chest"
     ],
@@ -20645,6 +21442,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "cable",
+    "bodyweight": false,
     "primaryMuscles": [
       "lats"
     ],
@@ -20669,6 +21467,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "middle back"
     ],
@@ -20694,6 +21493,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "shoulders"
     ],
@@ -20719,6 +21519,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "other",
+    "bodyweight": false,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -20747,6 +21548,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "hamstrings"
     ],
@@ -20778,6 +21580,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "hamstrings"
     ],
@@ -20810,6 +21613,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "hamstrings"
     ],
@@ -20843,6 +21647,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "body only",
+    "bodyweight": false,
     "primaryMuscles": [
       "lower back"
     ],
@@ -20869,6 +21674,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "medicine ball",
+    "bodyweight": false,
     "primaryMuscles": [
       "triceps"
     ],
@@ -20895,6 +21701,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "medicine ball",
+    "bodyweight": false,
     "primaryMuscles": [
       "abdominals"
     ],
@@ -20921,6 +21728,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "medicine ball",
+    "bodyweight": false,
     "primaryMuscles": [
       "abdominals"
     ],
@@ -20948,6 +21756,7 @@
     "level": "intermediate",
     "mechanic": "isolation",
     "equipment": "other",
+    "bodyweight": true,
     "primaryMuscles": [
       "abdominals"
     ],
@@ -20976,6 +21785,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "other",
+    "bodyweight": true,
     "primaryMuscles": [
       "chest"
     ],
@@ -21002,6 +21812,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "other",
+    "bodyweight": true,
     "primaryMuscles": [
       "abdominals"
     ],
@@ -21025,6 +21836,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "other",
+    "bodyweight": true,
     "primaryMuscles": [
       "middle back"
     ],
@@ -21050,6 +21862,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "other",
+    "bodyweight": true,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -21079,6 +21892,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "other",
+    "bodyweight": false,
     "primaryMuscles": [
       "chest"
     ],
@@ -21106,6 +21920,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "middle back"
     ],
@@ -21133,6 +21948,7 @@
     "level": "intermediate",
     "mechanic": "isolation",
     "equipment": "dumbbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "triceps"
     ],
@@ -21160,6 +21976,7 @@
     "level": "beginner",
     "mechanic": null,
     "equipment": null,
+    "bodyweight": false,
     "primaryMuscles": [
       "hamstrings"
     ],
@@ -21184,6 +22001,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "machine",
+    "bodyweight": false,
     "primaryMuscles": [
       "abductors"
     ],
@@ -21209,6 +22027,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "machine",
+    "bodyweight": false,
     "primaryMuscles": [
       "adductors"
     ],
@@ -21235,6 +22054,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "other",
+    "bodyweight": false,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -21267,6 +22087,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "body only",
+    "bodyweight": false,
     "primaryMuscles": [
       "abdominals"
     ],
@@ -21292,6 +22113,7 @@
     "level": "beginner",
     "mechanic": null,
     "equipment": "exercise ball",
+    "bodyweight": false,
     "primaryMuscles": [
       "abdominals"
     ],
@@ -21313,6 +22135,7 @@
     "level": "beginner",
     "mechanic": null,
     "equipment": null,
+    "bodyweight": false,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -21338,6 +22161,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "other",
+    "bodyweight": false,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -21364,6 +22188,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "dumbbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "triceps"
     ],
@@ -21387,6 +22212,7 @@
     "level": "beginner",
     "mechanic": null,
     "equipment": null,
+    "bodyweight": false,
     "primaryMuscles": [
       "triceps"
     ],
@@ -21409,6 +22235,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "cable",
+    "bodyweight": false,
     "primaryMuscles": [
       "triceps"
     ],
@@ -21432,6 +22259,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "cable",
+    "bodyweight": false,
     "primaryMuscles": [
       "triceps"
     ],
@@ -21456,6 +22284,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "cable",
+    "bodyweight": false,
     "primaryMuscles": [
       "triceps"
     ],
@@ -21480,6 +22309,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "cable",
+    "bodyweight": false,
     "primaryMuscles": [
       "triceps"
     ],
@@ -21504,6 +22334,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": null,
+    "bodyweight": false,
     "primaryMuscles": [
       "triceps"
     ],
@@ -21526,6 +22357,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "body only",
+    "bodyweight": true,
     "primaryMuscles": [
       "abdominals"
     ],
@@ -21551,6 +22383,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "dumbbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "biceps"
     ],
@@ -21574,6 +22407,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "kettlebells",
+    "bodyweight": false,
     "primaryMuscles": [
       "shoulders"
     ],
@@ -21602,6 +22436,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "kettlebells",
+    "bodyweight": false,
     "primaryMuscles": [
       "shoulders"
     ],
@@ -21626,6 +22461,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "kettlebells",
+    "bodyweight": false,
     "primaryMuscles": [
       "shoulders"
     ],
@@ -21649,6 +22485,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "kettlebells",
+    "bodyweight": false,
     "primaryMuscles": [
       "middle back"
     ],
@@ -21673,6 +22510,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "cable",
+    "bodyweight": false,
     "primaryMuscles": [
       "lats"
     ],
@@ -21702,6 +22540,7 @@
     "level": "beginner",
     "mechanic": null,
     "equipment": null,
+    "bodyweight": false,
     "primaryMuscles": [
       "hamstrings"
     ],
@@ -21726,6 +22565,7 @@
     "level": "beginner",
     "mechanic": null,
     "equipment": null,
+    "bodyweight": false,
     "primaryMuscles": [
       "middle back"
     ],
@@ -21748,6 +22588,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "shoulders"
     ],
@@ -21773,6 +22614,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "cable",
+    "bodyweight": false,
     "primaryMuscles": [
       "traps"
     ],
@@ -21798,6 +22640,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "bands",
+    "bodyweight": false,
     "primaryMuscles": [
       "traps"
     ],
@@ -21823,6 +22666,7 @@
     "level": "beginner",
     "mechanic": null,
     "equipment": null,
+    "bodyweight": false,
     "primaryMuscles": [
       "shoulders"
     ],
@@ -21847,6 +22691,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "cable",
+    "bodyweight": false,
     "primaryMuscles": [
       "lats"
     ],
@@ -21876,6 +22721,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "body only",
+    "bodyweight": true,
     "primaryMuscles": [
       "lats"
     ],
@@ -21904,6 +22750,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "dumbbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "hamstrings"
     ],
@@ -21931,6 +22778,7 @@
     "level": "beginner",
     "mechanic": null,
     "equipment": "machine",
+    "bodyweight": false,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -21956,6 +22804,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "exercise ball",
+    "bodyweight": true,
     "primaryMuscles": [
       "lower back"
     ],
@@ -21983,6 +22832,7 @@
     "level": "intermediate",
     "mechanic": "isolation",
     "equipment": "exercise ball",
+    "bodyweight": false,
     "primaryMuscles": [
       "abdominals"
     ],
@@ -22009,6 +22859,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "other",
+    "bodyweight": true,
     "primaryMuscles": [
       "triceps"
     ],
@@ -22036,6 +22887,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "medicine ball",
+    "bodyweight": true,
     "primaryMuscles": [
       "abdominals"
     ],
@@ -22060,6 +22912,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "barbell",
+    "bodyweight": true,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -22088,6 +22941,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "other",
+    "bodyweight": true,
     "primaryMuscles": [
       "lats"
     ],
@@ -22114,6 +22968,7 @@
     "level": "expert",
     "mechanic": "compound",
     "equipment": "barbell",
+    "bodyweight": true,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -22141,6 +22996,7 @@
     "level": "intermediate",
     "mechanic": "isolation",
     "equipment": "other",
+    "bodyweight": false,
     "primaryMuscles": [
       "abdominals"
     ],
@@ -22164,6 +23020,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "other",
+    "bodyweight": false,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -22192,6 +23049,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "chest"
     ],
@@ -22218,6 +23076,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "chest"
     ],
@@ -22244,6 +23103,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "chest"
     ],
@@ -22272,6 +23132,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "cable",
+    "bodyweight": false,
     "primaryMuscles": [
       "lats"
     ],
@@ -22301,6 +23162,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "cable",
+    "bodyweight": false,
     "primaryMuscles": [
       "lats"
     ],
@@ -22330,6 +23192,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "body only",
+    "bodyweight": true,
     "primaryMuscles": [
       "lats"
     ],
@@ -22358,6 +23221,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "biceps"
     ],
@@ -22382,6 +23246,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -22412,6 +23277,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "hamstrings"
     ],
@@ -22437,6 +23303,7 @@
     "level": "beginner",
     "mechanic": "compound",
     "equipment": "body only",
+    "bodyweight": true,
     "primaryMuscles": [
       "abdominals"
     ],
@@ -22460,6 +23327,7 @@
     "level": "intermediate",
     "mechanic": null,
     "equipment": null,
+    "bodyweight": false,
     "primaryMuscles": [
       "abductors"
     ],
@@ -22486,6 +23354,7 @@
     "level": "intermediate",
     "mechanic": null,
     "equipment": null,
+    "bodyweight": false,
     "primaryMuscles": [
       "hamstrings"
     ],
@@ -22512,6 +23381,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "body only",
+    "bodyweight": false,
     "primaryMuscles": [
       "forearms"
     ],
@@ -22534,6 +23404,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "other",
+    "bodyweight": false,
     "primaryMuscles": [
       "forearms"
     ],
@@ -22560,6 +23431,7 @@
     "level": "beginner",
     "mechanic": "isolation",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "forearms"
     ],
@@ -22582,6 +23454,7 @@
     "level": "intermediate",
     "mechanic": "compound",
     "equipment": "other",
+    "bodyweight": false,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -22612,6 +23485,7 @@
     "level": "expert",
     "mechanic": "compound",
     "equipment": "barbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "quadriceps"
     ],
@@ -22641,6 +23515,7 @@
     "level": "intermediate",
     "mechanic": "isolation",
     "equipment": "dumbbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "biceps"
     ],
@@ -22670,6 +23545,7 @@
     "level": "intermediate",
     "mechanic": "isolation",
     "equipment": "dumbbell",
+    "bodyweight": false,
     "primaryMuscles": [
       "biceps"
     ],

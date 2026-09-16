@@ -20,6 +20,7 @@ class CatalogExercise {
     this.notes,
     this.isCustom = false,
     this.groupOverride,
+    this.bodyweight,
   });
 
   final String id;
@@ -40,6 +41,12 @@ class CatalogExercise {
   /// snapshots) instead of deriving it from muscles.
   final MuscleGroup? groupOverride;
 
+  /// Explicit "is this a bodyweight-loaded movement?" flag from the dataset.
+  /// Curated per-exercise (the raw `equipment` tag is unreliable — e.g. dips
+  /// and muscle-ups are tagged `other`), so when present it wins over the
+  /// equipment heuristic in [usesBodyweight].
+  final bool? bodyweight;
+
   /// Broad muscle group, for icon/colour and grouping.
   MuscleGroup get group {
     if (groupOverride != null) return groupOverride!;
@@ -52,10 +59,11 @@ class CatalogExercise {
 
   /// Whether the exercise is primarily loaded by the lifter's own bodyweight
   /// (push-up, pull-up, dip …). Volume then counts bodyweight toward the load.
-  bool get usesBodyweight {
-    final eq = (equipment ?? '').toLowerCase();
-    return eq == 'body only';
-  }
+  ///
+  /// Prefers the curated [bodyweight] flag; falls back to the dataset's
+  /// `equipment == 'body only'` tag when no flag is set (e.g. custom exercises).
+  bool get usesBodyweight =>
+      bodyweight ?? (equipment ?? '').toLowerCase() == 'body only';
 
   static List<String> _strings(Object? v) =>
       (v as List?)?.map((e) => e.toString()).toList() ?? const [];
@@ -80,6 +88,7 @@ class CatalogExercise {
       imageUrls: _images(j['images']),
       notes: j['notes']?.toString(),
       isCustom: isCustom || j['isCustom'] == true,
+      bodyweight: j['bodyweight'] is bool ? j['bodyweight'] as bool : null,
     );
   }
 
@@ -105,6 +114,7 @@ class CatalogExercise {
       imageUrls: ov.containsKey('images') ? _images(ov['images']) : imageUrls,
       notes: ov['notes']?.toString() ?? notes,
       isCustom: isCustom,
+      bodyweight: ov['bodyweight'] is bool ? ov['bodyweight'] as bool : bodyweight,
     );
   }
 

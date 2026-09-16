@@ -7,6 +7,7 @@ import '../state/gym_provider.dart';
 import '../widgets/common.dart';
 import '../widgets/exercise_demo.dart';
 import 'exercise_detail_screen.dart';
+import 'settings_screen.dart';
 
 class ExercisesScreen extends StatefulWidget {
   const ExercisesScreen({super.key});
@@ -24,7 +25,17 @@ class _ExercisesScreenState extends State<ExercisesScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Exercises')),
+      appBar: AppBar(
+        title: const Text('Exercises'),
+        actions: [
+          IconButton(
+            tooltip: 'Settings',
+            icon: const Icon(Icons.settings_outlined),
+            onPressed: () => Navigator.of(context).push(
+                MaterialPageRoute(builder: (_) => const SettingsScreen())),
+          ),
+        ],
+      ),
       floatingActionButton: FloatingActionButton.extended(
         onPressed: () => showCustomExerciseEditor(context),
         icon: const Icon(Icons.add),
