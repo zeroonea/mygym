@@ -1,6 +1,6 @@
 import 'dart:math' as math;
 
-import 'exercise.dart';
+import 'catalog_exercise.dart';
 import 'exercise_set.dart';
 import 'workout.dart';
 import 'workout_exercise.dart';
@@ -14,7 +14,7 @@ class SetGroup {
   });
 
   final WorkoutExercise workoutExercise;
-  final Exercise exercise;
+  final CatalogExercise exercise;
   final List<ExerciseSet> sets;
 
   double get volume => sets.fold(0, (sum, s) => sum + s.volume);

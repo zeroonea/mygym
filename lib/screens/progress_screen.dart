@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 import '../models/aggregates.dart';
-import '../models/exercise.dart';
+import '../models/catalog_exercise.dart';
 import '../state/gym_provider.dart';
 import '../utils/format.dart';
 import '../widgets/common.dart';
@@ -18,8 +18,8 @@ class ProgressScreen extends StatefulWidget {
 }
 
 class _ProgressScreenState extends State<ProgressScreen> {
-  List<Exercise> _exercises = [];
-  Exercise? _selected;
+  List<CatalogExercise> _exercises = [];
+  CatalogExercise? _selected;
   List<ProgressPoint> _points = [];
   bool _loading = true;
 
@@ -44,8 +44,8 @@ class _ProgressScreenState extends State<ProgressScreen> {
     }
   }
 
-  Future<void> _loadPoints(Exercise exercise) async {
-    final points = await _provider.repository.exerciseProgress(exercise.id!);
+  Future<void> _loadPoints(CatalogExercise exercise) async {
+    final points = await _provider.repository.exerciseProgress(exercise.id);
     if (!mounted) return;
     setState(() => _points = points);
   }
@@ -107,7 +107,7 @@ class _ProgressScreenState extends State<ProgressScreen> {
   }
 
   Widget _buildSelector() {
-    return DropdownButtonFormField<Exercise>(
+    return DropdownButtonFormField<CatalogExercise>(
       initialValue: _selected,
       isExpanded: true,
       decoration: const InputDecoration(labelText: 'Exercise'),

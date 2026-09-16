@@ -1,14 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-import '../data/media_helpers.dart';
-import '../models/exercise.dart';
+import '../models/catalog_exercise.dart';
 import '../state/gym_provider.dart';
 import '../widgets/common.dart';
 import '../widgets/exercise_demo.dart';
-import 'exercises_screen.dart';
 
-/// Full-screen picker returning the ids of the exercises the user selected.
+/// Full-screen picker returning the exercises the user selected to add.
 class ExercisePickerScreen extends StatefulWidget {
   const ExercisePickerScreen({super.key});
 
@@ -18,33 +16,17 @@ class ExercisePickerScreen extends StatefulWidget {
 
 class _ExercisePickerScreenState extends State<ExercisePickerScreen> {
   String _query = '';
-  final Set<int> _selected = {};
-
-  List<Exercise> _apply(List<Exercise> all) {
-    if (_query.isEmpty) return all;
-    return all
-        .where((e) => e.name.toLowerCase().contains(_query.toLowerCase()))
-        .toList();
-  }
+  final Map<String, CatalogExercise> _selected = {};
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Add exercises'),
-        actions: [
-          IconButton(
-            icon: const Icon(Icons.add_circle_outline),
-            tooltip: 'Create new',
-            onPressed: () => showExerciseEditor(context),
-          ),
-        ],
-      ),
+      appBar: AppBar(title: const Text('Add exercises')),
       floatingActionButton: _selected.isEmpty
           ? null
           : FloatingActionButton.extended(
               onPressed: () =>
-                  Navigator.pop(context, _selected.toList()),
+                  Navigator.pop(context, _selected.values.toList()),
               icon: const Icon(Icons.check),
               label: Text('Add ${_selected.length}'),
             ),
@@ -52,7 +34,7 @@ class _ExercisePickerScreenState extends State<ExercisePickerScreen> {
         top: false,
         child: Consumer<GymProvider>(
           builder: (context, provider, _) {
-            final exercises = _apply(provider.exercises);
+            final results = provider.catalog.query(text: _query);
             return Column(
               children: [
                 Padding(
@@ -66,34 +48,31 @@ class _ExercisePickerScreenState extends State<ExercisePickerScreen> {
                   ),
                 ),
                 Expanded(
-                  child: exercises.isEmpty
+                  child: results.isEmpty
                       ? const EmptyState(
                           icon: Icons.search_off,
                           title: 'No exercises found',
                         )
                       : ListView.builder(
-                          padding:
-                              const EdgeInsets.fromLTRB(16, 0, 16, 96),
-                          itemCount: exercises.length,
+                          padding: const EdgeInsets.fromLTRB(16, 0, 16, 96),
+                          itemCount: results.length,
                           itemBuilder: (context, i) {
-                            final e = exercises[i];
-                            final checked = _selected.contains(e.id);
-                            final media = mediaFor(e.name);
+                            final e = results[i];
+                            final checked = _selected.containsKey(e.id);
                             return Card(
                               margin: const EdgeInsets.only(bottom: 8),
                               child: CheckboxListTile(
                                 value: checked,
-                                secondary:
-                                    media != null && media.frames.isNotEmpty
-                                        ? ExerciseThumb(frame: media.frames.first)
-                                        : MuscleAvatar(group: e.group),
+                                secondary: e.hasDemo
+                                    ? ExerciseThumb(frame: e.imageUrls.first)
+                                    : MuscleAvatar(group: e.group),
                                 title: Text(e.name,
                                     style: const TextStyle(
                                         fontWeight: FontWeight.w600)),
                                 subtitle: Text(e.group.label),
                                 onChanged: (v) => setState(() {
                                   if (v == true) {
-                                    _selected.add(e.id!);
+                                    _selected[e.id] = e;
                                   } else {
                                     _selected.remove(e.id);
                                   }

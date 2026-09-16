@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../data/muscle_taxonomy.dart';
+
 /// A front + back body diagram that highlights the muscles worked by an
 /// exercise. Muscle names match the free-exercise-db vocabulary
 /// (e.g. `chest`, `lats`, `quadriceps`).
@@ -149,11 +151,20 @@ class _MuscleMapPainter extends CustomPainter {
     part(t(38, 168, 47, 210)); // left shin
     part(t(53, 168, 62, 210)); // right shin
 
-    // Highlights: secondary first, then primary on top.
-    void highlight(Set<String> muscles, Color color) {
-      final paint = Paint()..color = color;
+    // Map (possibly precise) muscle names to drawn body regions.
+    Set<String> regionsOf(Set<String> muscles) {
+      final out = <String>{};
       for (final m in muscles) {
-        for (final r in _regions(m, back)) {
+        final r = baseRegion(m);
+        if (r != null) out.add(r);
+      }
+      return out;
+    }
+
+    void paintRegions(Set<String> regions, Color color) {
+      final paint = Paint()..color = color;
+      for (final region in regions) {
+        for (final r in _regions(region, back)) {
           canvas.drawRRect(
             RRect.fromRectAndRadius(t(r.left, r.top, r.right, r.bottom),
                 Radius.circular(5 * s)),
@@ -163,8 +174,11 @@ class _MuscleMapPainter extends CustomPainter {
       }
     }
 
-    highlight(secondary.difference(primary), secondaryColor);
-    highlight(primary, primaryColor);
+    // Secondary first, then primary on top (primary wins overlaps).
+    final primaryRegions = regionsOf(primary);
+    final secondaryRegions = regionsOf(secondary).difference(primaryRegions);
+    paintRegions(secondaryRegions, secondaryColor);
+    paintRegions(primaryRegions, primaryColor);
   }
 
   /// Local-space rectangles for a muscle, for the given view.
@@ -178,6 +192,8 @@ class _MuscleMapPainter extends CustomPainter {
           return [r(34, 44, 49, 64), r(51, 44, 66, 64)];
         case 'abdominals':
           return [r(42, 65, 58, 94)];
+        case 'obliques':
+          return [r(37, 66, 42, 92), r(58, 66, 63, 92)];
         case 'traps':
           return [r(40, 36, 48, 44), r(52, 36, 60, 44)];
         case 'neck':

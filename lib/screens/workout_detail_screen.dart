@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-import '../data/media_helpers.dart';
 import '../models/aggregates.dart';
+import '../models/catalog_exercise.dart';
 import '../models/exercise_set.dart';
 import '../state/gym_provider.dart';
 import '../utils/format.dart';
@@ -49,12 +49,12 @@ class _WorkoutDetailScreenState extends State<WorkoutDetailScreen> {
   }
 
   Future<void> _addExercises() async {
-    final ids = await Navigator.of(context).push<List<int>>(
+    final selected = await Navigator.of(context).push<List<CatalogExercise>>(
       MaterialPageRoute(builder: (_) => const ExercisePickerScreen()),
     );
-    if (ids == null || ids.isEmpty) return;
-    for (final id in ids) {
-      await _provider.repository.addExerciseToWorkout(widget.workoutId, id);
+    if (selected == null || selected.isEmpty) return;
+    for (final e in selected) {
+      await _provider.repository.addExerciseToWorkout(widget.workoutId, e);
     }
     await _reload();
   }
@@ -336,11 +336,9 @@ class _ExerciseCard extends StatelessWidget {
   final VoidCallback onOpen;
 
   Widget _leadingVisual() {
-    final media = mediaFor(group.exercise.name);
-    if (media != null && media.frames.isNotEmpty) {
-      return ExerciseThumb(frame: media.frames.first, size: 38);
-    }
-    return MuscleAvatar(group: group.exercise.group, size: 38);
+    final e = group.exercise;
+    if (e.hasDemo) return ExerciseThumb(frame: e.imageUrls.first, size: 38);
+    return MuscleAvatar(group: e.group, size: 38);
   }
 
   @override

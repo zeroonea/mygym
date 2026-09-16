@@ -9,8 +9,16 @@ your strength progress over time.
 - **Fast in-workout logging** — start a workout, add exercises, and log each set
   with a quick +/- weight/reps pad. "Save & next" logs set after set without
   leaving the pad.
-- **Exercise library** — 50+ common exercises pre-loaded and grouped by muscle
-  group; add your own custom exercises too.
+- **Exercise library** — the full 870-exercise
+  [free-exercise-db](https://github.com/yuhonas/free-exercise-db) bundled offline,
+  searchable and filterable by muscle group, equipment and level; add your own
+  custom exercises too.
+- **Live enrichment layer** — precise muscle targeting (e.g. *lateral deltoid*
+  for lateral raises) and extra exercises come from
+  `data/exercise_overrides.json` in this repo, fetched at launch via
+  `raw.githubusercontent.com` and merged over the base — so the data can be
+  improved without rebuilding the app (see `data/README.md`).
+- **Animated demos** streamed on demand and cached on device.
 - **History** — every workout saved locally, with date, total sets and volume.
 - **Progress charts** — per-exercise graphs of estimated 1RM, top-set weight and
   volume per session, plus your personal bests.
@@ -34,10 +42,12 @@ You can also trigger a build manually from the **Actions** tab → *Build APK* �
 ## Tech
 
 - Flutter (Material 3), `provider` for state
-- `sqflite` for local persistence
+- `sqflite` for local workout persistence
 - `fl_chart` for progress graphs
-- Animated exercise demos, muscle data and instructions from the public-domain
-  [free-exercise-db](https://github.com/yuhonas/free-exercise-db); the muscle
+- `cached_network_image` for streamed, cached exercise demos
+- Exercise catalog, muscle data and instructions from the public-domain
+  [free-exercise-db](https://github.com/yuhonas/free-exercise-db) (bundled), plus
+  this repo's `data/exercise_overrides.json` enrichment layer; the muscle
   body-map is drawn in-app with a `CustomPainter`
 
 ## Developing locally

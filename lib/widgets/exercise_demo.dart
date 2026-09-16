@@ -1,14 +1,15 @@
 import 'dart:async';
 
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 
 /// Plays an exercise's start/finish frames as a looping demo by cross-fading
-/// between them. Falls back to a single static frame if only one is supplied.
+/// between them. Images stream from the network and are cached on device.
 class ExerciseDemo extends StatefulWidget {
   const ExerciseDemo({
     super.key,
     required this.frames,
-    this.height = 220,
+    this.height = 240,
     this.borderRadius = 18,
   });
 
@@ -35,37 +36,36 @@ class _ExerciseDemoState extends State<ExerciseDemo> {
   }
 
   @override
-  void didChangeDependencies() {
-    super.didChangeDependencies();
-    for (final f in widget.frames) {
-      precacheImage(AssetImage(f), context);
-    }
-  }
-
-  @override
   void dispose() {
     _timer?.cancel();
     super.dispose();
   }
 
+  Widget _frame(String url) => CachedNetworkImage(
+        imageUrl: url,
+        fit: BoxFit.contain,
+        width: double.infinity,
+        placeholder: (_, _) =>
+            const Center(child: CircularProgressIndicator(strokeWidth: 2)),
+        errorWidget: (_, _, _) => const Center(
+            child: Icon(Icons.image_not_supported_outlined, size: 40)),
+      );
+
   @override
   Widget build(BuildContext context) {
-    final radius = BorderRadius.circular(widget.borderRadius);
     final single = widget.frames.length < 2;
     return ClipRRect(
-      borderRadius: radius,
+      borderRadius: BorderRadius.circular(widget.borderRadius),
       child: Container(
         height: widget.height,
         width: double.infinity,
         color: Colors.white,
         child: single
-            ? Image.asset(widget.frames.first, fit: BoxFit.contain)
+            ? _frame(widget.frames.first)
             : AnimatedCrossFade(
                 duration: const Duration(milliseconds: 450),
-                firstChild: Image.asset(widget.frames[0],
-                    fit: BoxFit.contain, width: double.infinity),
-                secondChild: Image.asset(widget.frames[1],
-                    fit: BoxFit.contain, width: double.infinity),
+                firstChild: _frame(widget.frames[0]),
+                secondChild: _frame(widget.frames[1]),
                 crossFadeState: _showFirst
                     ? CrossFadeState.showFirst
                     : CrossFadeState.showSecond,
@@ -90,7 +90,13 @@ class ExerciseThumb extends StatelessWidget {
         width: size,
         height: size,
         color: Colors.white,
-        child: Image.asset(frame, fit: BoxFit.cover),
+        child: CachedNetworkImage(
+          imageUrl: frame,
+          fit: BoxFit.cover,
+          placeholder: (_, _) => const SizedBox.shrink(),
+          errorWidget: (_, _, _) =>
+              const Icon(Icons.fitness_center, size: 20),
+        ),
       ),
     );
   }

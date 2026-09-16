@@ -1,4 +1,6 @@
-/// Links an [Exercise] into a [Workout], preserving its order in the session.
+/// Links a catalog exercise into a [Workout], preserving its order. A snapshot
+/// of the exercise name and group is stored alongside so history survives even
+/// if the catalog changes.
 class WorkoutExercise {
   const WorkoutExercise({
     this.id,
@@ -9,34 +11,13 @@ class WorkoutExercise {
 
   final int? id;
   final int workoutId;
-  final int exerciseId;
+  final String exerciseId;
   final int position;
-
-  WorkoutExercise copyWith({
-    int? id,
-    int? workoutId,
-    int? exerciseId,
-    int? position,
-  }) {
-    return WorkoutExercise(
-      id: id ?? this.id,
-      workoutId: workoutId ?? this.workoutId,
-      exerciseId: exerciseId ?? this.exerciseId,
-      position: position ?? this.position,
-    );
-  }
-
-  Map<String, Object?> toMap() => {
-        if (id != null) 'id': id,
-        'workout_id': workoutId,
-        'exercise_id': exerciseId,
-        'position': position,
-      };
 
   factory WorkoutExercise.fromMap(Map<String, Object?> map) => WorkoutExercise(
         id: map['id'] as int?,
         workoutId: map['workout_id'] as int,
-        exerciseId: map['exercise_id'] as int,
+        exerciseId: map['exercise_id'] as String,
         position: map['position'] as int,
       );
 }
